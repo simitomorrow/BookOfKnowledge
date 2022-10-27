@@ -1,53 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
     [SerializeField] private BoolVariable canInteract;
     [SerializeField] private InteractablesList interactables;
+    [SerializeField] private GameEvent interactEvent;
 
-    // Start is called before the first frame update
-    void Start()
+    private Inputs inputs;
+    private InputAction interact;
+
+    private void Awake()
     {
-        
+        inputs = new Inputs();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        //Collider[] hitColliders = Physics.OverlapSphere(this.transform.position, collectRadius);
-        //Debug.Log(hitColliders.Length);
-        //Transform nearest = null;
-        //float nearDist = float.PositiveInfinity;
-        //for (int i = 0; i < hitColliders.Length; i++)
-        //{
-        //    if (hitColliders[i].gameObject.GetComponent<I_Interactable>() != null)
-        //    {
+        interact = inputs.Player.Interact;
+        interact.Enable();
+        interact.performed += Interacting;
+    }
 
-        //        Vector3 offset = transform.position - hitColliders[i].transform.position;
-        //        float thisDist = offset.sqrMagnitude;
-        //        if (thisDist < nearDist)
-        //        {
-        //            nearDist = thisDist;
-        //            nearest = hitColliders[i].transform;
-        //        }
-        //    }
-        //}
-        //if (nearest != null)
-        //{
-        //    nearest.GetComponent<I_Interactable>().Interact();
-        //}
+    private void OnDisable()
+    {
+        interact.Disable();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("enter");
         I_Interactable interactable = other.gameObject.GetComponent<I_Interactable>();
         if (interactable != null)
         {
             interactables.Add(interactable);
-            Debug.Log(interactables.Count());
         }
     }
 
@@ -57,6 +44,15 @@ public class PlayerScript : MonoBehaviour
         if (interactable != null)
         {
             interactables.Remove(interactable);
+        }
+    }
+
+    private void Interacting(InputAction.CallbackContext context)
+    {
+        if(interactables.Count() > 0)
+        {
+            interactEvent.Raise();
+            interactables.objects[0].Interact();
         }
     }
 }
