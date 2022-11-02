@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SphereCollider))]
 public class NPC : MonoBehaviour, I_Interactable
 {
     public void Interact()
     {
-        Debug.Log("haha xd im sick");
+        Debug.Log("You talked to me.");
     }
 }

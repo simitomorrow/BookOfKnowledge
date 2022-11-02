@@ -51,7 +51,6 @@ public class PlayerScript : MonoBehaviour
     {
         if(interactables.Count() > 0)
         {
-            interactEvent.Raise();
             interactables.objects[0].Interact();
         }
     }
