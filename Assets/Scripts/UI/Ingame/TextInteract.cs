@@ -4,18 +4,18 @@ using UnityEngine;
 public class TextInteract : MonoBehaviour
 {
     public InteractablesList interactables;
-    public TextMeshProUGUI text;
+    public CanvasGroup textGroup;
     private int previousCount;
 
     private void Start()
     {
-        previousCount = interactables.Count();
+        previousCount = interactables.list.Count;
         UpdateText();
     }
 
     private void Update()
     {
-        if (interactables.Count() != previousCount)
+        if (interactables.list.Count != previousCount)
         {
             UpdateText();
         }
@@ -23,15 +23,15 @@ public class TextInteract : MonoBehaviour
 
     public void UpdateText()
     {
-        if (interactables.Count() > 0)
+        if (interactables.list.Count > 0)
         {
-            text.enabled = true;
+            textGroup.alpha = 1;
         }
         else
         {
-            text.enabled = false;
+            textGroup.alpha = 0;
         }
 
-        previousCount = interactables.Count();
+        previousCount = interactables.list.Count;
     }
 }

@@ -7,7 +7,7 @@ public class Collectable : MonoBehaviour, I_Interactable
     public void Interact()
     {
         Debug.Log("TODO: add to inventory and play a sound");
-        interactables.Remove(this);
+        interactables.list.Remove(this);
         Destroy(this.gameObject);
     }
 }
