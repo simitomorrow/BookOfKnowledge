@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
         I_Interactable interactable = other.gameObject.GetComponent<I_Interactable>();
         if (interactable != null)
         {
-            interactables.Add(interactable);
+            interactables.list.Add(interactable);
         }
     }
 
@@ -43,15 +43,15 @@ public class PlayerScript : MonoBehaviour
         I_Interactable interactable = other.gameObject.GetComponent<I_Interactable>();
         if (interactable != null)
         {
-            interactables.Remove(interactable);
+            interactables.list.Remove(interactable);
         }
     }
 
     private void Interacting(InputAction.CallbackContext context)
     {
-        if(interactables.Count() > 0)
+        if(interactables.list.Count > 0)
         {
-            interactables.objects[0].Interact();
+            interactables.list[0].Interact();
         }
     }
 }
