@@ -5,8 +5,9 @@ using UnityEngine;
 public class IncidentData : ScriptableObject
 {
     public bool questTriggered;
+    public bool questFinished;
     public string title;
-    [Multiline]
+    [TextArea(3,10)]
     public string description;
     public Sprite thumbnail;
     public Sprite caseImage;
