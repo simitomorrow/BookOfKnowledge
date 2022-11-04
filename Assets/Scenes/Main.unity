@@ -1007,7 +1007,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8191639187000017042, guid: ece5894d8b2b19e428af4ac084ff30ea, type: 3}
       propertyPath: m_Name
-      value: Player 1 1
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8191639187000017054, guid: ece5894d8b2b19e428af4ac084ff30ea, type: 3}
       propertyPath: m_Camera
@@ -1059,6 +1059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece5894d8b2b19e428af4ac084ff30ea, type: 3}
+--- !u!4 &802741385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4564564547875879374, guid: ece5894d8b2b19e428af4ac084ff30ea, type: 3}
+  m_PrefabInstance: {fileID: 802741384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &812980888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2164,7 +2169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949238652552471604}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.097103, y: 64.16246, z: -74.51646}
+  m_LocalPosition: {x: 4.0970993, y: 64.16246, z: -74.51644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2316,7 +2321,7 @@ GameObject:
   - component: {fileID: 8903857535647207199}
   - component: {fileID: 6333361778931486008}
   m_Layer: 0
-  m_Name: 3rdPersonCinemachine
+  m_Name: PlayerFollowCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2330,7 +2335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8903857535647207137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.097101, y: 64.16246, z: -74.51645}
+  m_LocalPosition: {x: 4.0970993, y: 64.16246, z: -74.51644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2357,7 +2362,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 802741385}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
