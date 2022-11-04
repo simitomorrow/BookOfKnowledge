@@ -32,6 +32,11 @@
                 "value": "{\"m_Value\":true}"
             },
             {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "Mesh.RebuildColliders",
+                "value": "{\"m_Value\":true}"
+            },
+            {
                 "type": "UnityEngine.Polybrush.BrushMirror, Unity.Polybrush, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "Brush.MirrorAxis",
                 "value": "{\"m_Value\":0}"
@@ -44,7 +49,7 @@
             {
                 "type": "UnityEditor.Polybrush.PrefabLoadout, Unity.Polybrush.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ScatteringEditor.userLoadout",
-                "value": "{\"m_Value\":{\"infos\":[{\"palette\":{\"fileID\":11400000,\"guid\":\"b3051735138c2a04b9e3cebfc355f720\",\"type\":2},\"prefab\":{\"fileID\":3322926348065130178,\"guid\":\"adb972dcda8124d49a63d2da65260d07\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"b3051735138c2a04b9e3cebfc355f720\",\"type\":2},\"prefab\":{\"fileID\":6819412752657062211,\"guid\":\"198f0be4f9361f44a9109acc40c2d255\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"b3051735138c2a04b9e3cebfc355f720\",\"type\":2},\"prefab\":{\"fileID\":404253276349014436,\"guid\":\"1095efa5c162c974ca895b9665fadcb8\",\"type\":3}}]}}"
+                "value": "{\"m_Value\":{\"infos\":[{\"palette\":{\"fileID\":11400000,\"guid\":\"b3051735138c2a04b9e3cebfc355f720\",\"type\":2},\"prefab\":{\"fileID\":5854617017735050457,\"guid\":\"a219b5a06485e304f839eb7a3c643be1\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"b3051735138c2a04b9e3cebfc355f720\",\"type\":2},\"prefab\":{\"fileID\":4199610277677785779,\"guid\":\"1031b7cf3b6f1e141bdc15dbe9ae8eb1\",\"type\":3}}]}}"
             },
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -54,7 +59,7 @@
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "GI.WorkflowMode",
-                "value": "{\"m_Value\":1}"
+                "value": "{\"m_Value\":0}"
             },
             {
                 "type": "UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
