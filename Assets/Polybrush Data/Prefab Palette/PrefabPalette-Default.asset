@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 7736788223933206829, guid: b60c0e6734f485042bee6e2d7339bfe8, type: 3}
+  - gameObject: {fileID: 9022339258147856883, guid: b9476001150935e4e846c2064ffd807d, type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
@@ -28,4 +28,4 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: gras-blumen-groesser2_V2
+    name: Evironment_Gras_Buendel3
