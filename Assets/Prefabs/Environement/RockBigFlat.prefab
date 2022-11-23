@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6001939878910435565}
   - component: {fileID: 7270207348381724488}
   - component: {fileID: 4827859184968719234}
+  - component: {fileID: 680957777170156880}
   m_Layer: 0
   m_Name: RockBigFlat
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &680957777170156880
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6341345531432106583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5521328925692312619, guid: c8fc109ba298990479b83c92647a935b, type: 3}
