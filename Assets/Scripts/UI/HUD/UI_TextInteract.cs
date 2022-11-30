@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class TextInteract : MonoBehaviour
+public class UI_TextInteract : MonoBehaviour
 {
     public InteractablesList interactables;
     public CanvasGroup textGroup;

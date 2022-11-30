@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Incidents : MonoBehaviour
 {
-    public List<IncidentData> incidents;
+    public IncidentList incidents;
     public IntVariable selectedIncident;
     public Button buttonPrefab;
     public GameObject buttonParent;
@@ -24,7 +24,7 @@ public class UI_Incidents : MonoBehaviour
     private void CultivateButtons()
     {
         int id = 0;
-        foreach (IncidentData incident in incidents)
+        foreach (IncidentData incident in incidents.list)
         {
             Button button = Instantiate(buttonPrefab, buttonParent.transform);
             UI_IncidentButton thumbnailButton = button.GetComponentInChildren<UI_IncidentButton>();
@@ -36,15 +36,15 @@ public class UI_Incidents : MonoBehaviour
 
     public void SelectIncident()
     {
-        if (selectedIncident.value > incidents.Count)
+        if (selectedIncident.value >= incidents.list.Count || selectedIncident.value < 0)
         {
+            Debug.LogError("Incident selection out of range. Incident count: " + incidents.list.Count + "  - selected incident number: " + (selectedIncident.value+1));
             selectedIncident.value = 0;
-            Debug.LogError("Incident selection went wrong");
-        }
+        } 
         int index = selectedIncident.value;
         buttons[index].Select();
-        description.text = incidents[index].description;
-        title.text = incidents[index].title;
-        mainImage.sprite = incidents[index].caseImage;
+        description.text = incidents.list[index].description;
+        title.text = incidents.list[index].title;
+        mainImage.sprite = incidents.list[index].caseImage;
     }
 }

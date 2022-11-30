@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 429dad598d73cb34194132d81b54a9e3, type: 3}
-  m_Name: 5_SevereLigma
+  m_Name: 5_Severe
   m_EditorClassIdentifier: 
   questTriggered: 0
   questFinished: 0
-  title: Severe Ligma
-  description: Microsoft can Sea of Thieves nuts haha
+  title: Severe
+  description: Microsoft
   thumbnail: {fileID: 21300000, guid: f200d42a7f808e94386e521949faca59, type: 3}
   caseImage: {fileID: 21300000, guid: feba5f2f272104a4b800d7e7df2751c6, type: 3}

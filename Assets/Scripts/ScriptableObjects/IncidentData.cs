@@ -11,4 +11,6 @@ public class IncidentData : ScriptableObject
     public string description;
     public Sprite thumbnail;
     public Sprite caseImage;
+
+    //required item?
 }
