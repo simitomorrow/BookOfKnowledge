@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 991887831652901154}
   - component: {fileID: 4209809222792851079}
   - component: {fileID: 2128171168281909837}
+  - component: {fileID: -30080362491501279}
   m_Layer: 0
   m_Name: RockLake
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-30080362491501279
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470683433845423000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3891178016670741245, guid: 2ff59a32922811a4586673d1de6e83cb, type: 3}

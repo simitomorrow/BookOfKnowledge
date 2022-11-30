@@ -54,9 +54,9 @@ namespace Community
     {
         public GameObject prefab = null;
         public GameObject oldPrefab = null;
-        public List<GameObject> objectsToReplace = new List<GameObject>();
-        public List<GameObject> newObjects = new List<GameObject>();
-        public List<string> objectPreview = new List<string>();
+        public List<GameObject> objectsToReplace = new();
+        public List<GameObject> newObjects = new();
+        public List<string> objectPreview = new();
         public bool editMode = false;
 
         public struct ReplacementPreferences
@@ -85,8 +85,8 @@ namespace Community
         public int LayerForSearch;
 
 
-        private Vector2 windowMinSize = new Vector2(450, 300);
-        private Vector2 windowMaxSize = new Vector2(800, 1000);
+        private Vector2 windowMinSize = new(450, 300);
+        private Vector2 windowMaxSize = new(800, 1000);
         private Vector2 scrollPosition;
 
         private static readonly IDictionary<System.Type, IComponentCopier> componentCopiers = new Dictionary<System.Type, IComponentCopier>();
@@ -146,8 +146,8 @@ namespace Community
 
             #region "TAG LAYER"
 
-            SearchWithTag = GUILayout.Toggle(!SearchWithLayer ? SearchWithTag : false, "Apply Search By Tag", EditorStyles.toggle);
-            SearchWithLayer = GUILayout.Toggle(!SearchWithTag ? SearchWithLayer : false, "Apply Search By Layer");
+            SearchWithTag = GUILayout.Toggle(!SearchWithLayer && SearchWithTag, "Apply Search By Tag", EditorStyles.toggle);
+            SearchWithLayer = GUILayout.Toggle(!SearchWithTag && SearchWithLayer, "Apply Search By Layer");
 
             if (SearchWithTag)
             {
@@ -290,7 +290,7 @@ namespace Community
         void Rename()
         {
             int count = 0;
-            List<int> ExistingNumbers = new List<int>();
+            List<int> ExistingNumbers = new();
 
             SetExistingNumbers(newObjects, ExistingNumbers, namingScheme);
 
@@ -320,7 +320,7 @@ namespace Community
         void RenamePreview()
         {
             int count = 0;
-            List<int> ExistingNumbers = new List<int>();
+            List<int> ExistingNumbers = new();
             objectPreview.Clear();
 
             if (replacementPreferences.renameObjects)
@@ -433,7 +433,7 @@ namespace Community
                     if (count == ExistingNumbers[i])
                     {
                         count++;
-                        i = 0;
+                        //i = 0;
                         return count;
                     }
                     else
@@ -489,7 +489,7 @@ namespace Community
                 }
                 copier.CopyComponent(replacementPreferences, component, newObject);
             }
-            int childCount = oldObject.transform.childCount;
+            //int childCount = oldObject.transform.childCount;
             for (int i = 0; i < oldObject.transform.childCount; i++)
             {
                 GameObject child = oldObject.transform.GetChild(i).gameObject;
@@ -547,7 +547,7 @@ namespace Community
                     GameObject[] allGameObjects = GameObject.FindObjectsOfType<GameObject>();
                     foreach (var gg in allGameObjects)
                     {
-                        if (gg.tag == TagForSearch)
+                        if (gg.CompareTag(TagForSearch))
                         {
                             if (gg != prefab)
                                 objectsToReplace.Add(gg);
@@ -652,13 +652,12 @@ namespace Community
                 {
                     return 0;
                 }
-                string[] x1, y1;
-                if (!table.TryGetValue(x, out x1))
+                if (!table.TryGetValue(x, out string[] x1))
                 {
                     x1 = Regex.Split(x.Replace(" ", ""), "([0-9]+)");
                     table.Add(x, x1);
                 }
-                if (!table.TryGetValue(y, out y1))
+                if (!table.TryGetValue(y, out string[] y1))
                 {
                     y1 = Regex.Split(y.Replace(" ", ""), "([0-9]+)");
                     table.Add(y, y1);
@@ -687,13 +686,12 @@ namespace Community
 
             private static int PartCompare(string left, string right)
             {
-                int x, y;
-                if (!int.TryParse(left, out x))
+                if (!int.TryParse(left, out int x))
                 {
                     return left.CompareTo(right);
                 }
 
-                if (!int.TryParse(right, out y))
+                if (!int.TryParse(right, out int y))
                 {
                     return left.CompareTo(right);
                 }
@@ -767,7 +765,7 @@ namespace Community
         }
 
         // Shared instance of default copier.
-        public static DefaultComponentCopier defaultComponentCopier = new DefaultComponentCopier();
+        public static DefaultComponentCopier defaultComponentCopier = new();
 
         /// <summary>
         /// Transform-specific component copier.
