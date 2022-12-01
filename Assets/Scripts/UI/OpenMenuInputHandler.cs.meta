@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: d860f39b1af0c384f9780952c33e5b03
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - activePage: {fileID: 11400000, guid: 191e50332d1a6e444bdf6f06e64a3906, type: 2}
+  - mainMenu: {fileID: 11400000, guid: 772ee88c1b1e2e14a849859c574cbb31, type: 2}
+  - ingredients: {fileID: 11400000, guid: 512b9c017e891f14981cb33a53c63f2f, type: 2}
+  - elixirs: {fileID: 11400000, guid: bd6f9b1c5256b284db0d62c6add43a0b, type: 2}
+  - incidents: {fileID: 11400000, guid: 3a4f2248d6dd364499fdccbd442b5a69, type: 2}
+  - map: {fileID: 11400000, guid: 4caa2e9f1fc8b104e8e77e05df005f1c, type: 2}
+  - updateUI: {fileID: 11400000, guid: 64a4ebc2c0ce9d24bb19fd5d2a9290e9, type: 2}
+  - isBookOpen: {fileID: 11400000, guid: 8208ef86b591d0247b9ae2c0660ec968, type: 2}
+  - isAlchemyOpen: {fileID: 11400000, guid: a48d2373c3d3cac4fb2a7f46886b9aea, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

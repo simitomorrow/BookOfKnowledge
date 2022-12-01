@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: ea5038a00382be049a9c3e3c361ac7d0
+guid: fedd182765d2d96429237238e9da0a4c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
   - interactables: {fileID: 11400000, guid: fc8e22470d2eb414a80430f7c687a04d, type: 2}
+  - canInteract: {fileID: 11400000, guid: 5b98af29f6c686e42a2d94e3d2bef9b4, type: 2}
+  - interactEvent: {fileID: 11400000, guid: 78e170fb33433524d8179638d3627cd2, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

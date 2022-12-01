@@ -1,7 +1,6 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Incident", menuName = "Data/Incident", order = 0)]
-
 public class IncidentData : ScriptableObject
 {
     public bool questTriggered;
