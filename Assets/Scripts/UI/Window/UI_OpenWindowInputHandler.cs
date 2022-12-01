@@ -112,6 +112,7 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
         {
             isBookOpen.value = false;
             windowVisibilityEvent.Raise();
+            EnablePlayerMovement();
         }
     }
 
