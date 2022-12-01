@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
-public class Collectable : MonoBehaviour, I_Interactable
+public class Collectable : MonoBehaviour, Interactable
 {
     public InteractablesList interactables;
     public void Interact()

@@ -39,7 +39,7 @@ public class PlayerInteractionHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        I_Interactable interactable = other.gameObject.GetComponent<I_Interactable>();
+        Interactable interactable = other.gameObject.GetComponent<Interactable>();
         if (interactable != null)
         {
             interactables.list.Add(interactable);
@@ -48,7 +48,7 @@ public class PlayerInteractionHandler : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        I_Interactable interactable = other.gameObject.GetComponent<I_Interactable>();
+        Interactable interactable = other.gameObject.GetComponent<Interactable>();
         if (interactable != null)
         {
             interactables.list.Remove(interactable);

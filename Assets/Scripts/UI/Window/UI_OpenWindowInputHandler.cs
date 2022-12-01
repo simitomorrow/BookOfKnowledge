@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class OpenMenuInputHandler : MonoBehaviour
+public class UI_OpenWindowInputHandler : MonoBehaviour
 {
     [SerializeField] private ActivePage activePage;
     [SerializeField] private PageKeyword mainMenu;
@@ -10,11 +10,16 @@ public class OpenMenuInputHandler : MonoBehaviour
     [SerializeField] private PageKeyword incidents;
     [SerializeField] private PageKeyword map;
 
-    [SerializeField] private GameEvent updateUI;
+    [SerializeField] private GameEvent windowVisibilityEvent;
     [SerializeField] private BoolVariable isBookOpen;
     [SerializeField] private BoolVariable isAlchemyOpen;
 
+    //The 3D movement of the StarterAssetsLibrary uses it's own inputsystem which I have to disable myself
+    //TODO if only there is a prettier way...
+    [SerializeField] private BoolVariable canPlayerMove;
+
     private Inputs inputs;
+    private InputAction openBook;
     private InputAction openMainMenu;
     private InputAction openIngredients;
     private InputAction openElixirs;
@@ -23,24 +28,28 @@ public class OpenMenuInputHandler : MonoBehaviour
     private InputAction openAlchemy;
     private InputAction closeWindow;
 
+    private InputAction debug;
+
     void Start()
     {
         isBookOpen.value = false;
         isAlchemyOpen.value = false;
         activePage.keyword = mainMenu;
-        SendUpdateUIEvent();
+        EnablePlayerMovement();
+        inputs.Book.Enable();
+        SendWindowVisibilityEvent();
     }
 
     private void Awake()
     {
         inputs = new Inputs();
-        inputs.Player.Enable();
-        inputs.Book.Enable();
-        inputs.UINavigation.Disable();
     }
 
     private void OnEnable()
     {
+        openBook = inputs.Book.ToggleBookOpen;
+        openBook.Enable();
+        openBook.performed += ToggleBookOpen;
 
         openMainMenu = inputs.Book.OpenMainMenu;
         openMainMenu.Enable();
@@ -69,10 +78,15 @@ public class OpenMenuInputHandler : MonoBehaviour
         closeWindow = inputs.Book.CloseWindow;
         closeWindow.Enable();
         closeWindow.performed += CloseWindow;
+
+        debug = inputs.UINavigation.Debug;
+        debug.Enable();
+        debug.performed += Test;
     }
 
     private void OnDisable()
     {
+        openBook.Disable();
         openMainMenu.Disable();
         openIngredients.Disable();
         openElixirs.Disable();
@@ -83,13 +97,24 @@ public class OpenMenuInputHandler : MonoBehaviour
 
     private void OpenBookPage(PageKeyword keyword)
     {
-        activePage.keyword = keyword;
-        inputs.Player.Disable();
-        inputs.UINavigation.Enable();
+        DisablePlayerMovement();
         isBookOpen.value = true;
-        SendUpdateUIEvent();
+        activePage.keyword = keyword;
+        SendWindowVisibilityEvent();
     }
-    
+
+    private void ToggleBookOpen(InputAction.CallbackContext context)
+    {
+        if (!isBookOpen.value)
+        {
+            OpenBookPage(activePage.keyword);
+        } else
+        {
+            isBookOpen.value = false;
+            windowVisibilityEvent.Raise();
+        }
+    }
+
     private void OpenMainMenu(InputAction.CallbackContext context)
     {
         OpenBookPage(mainMenu);
@@ -117,10 +142,9 @@ public class OpenMenuInputHandler : MonoBehaviour
 
     private void OpenAlchemy(InputAction.CallbackContext context)
     {
-        inputs.Player.Disable();
-        inputs.UINavigation.Enable();
+        DisablePlayerMovement();
         isAlchemyOpen.value = true;
-        SendUpdateUIEvent();
+        SendWindowVisibilityEvent();
     }
 
     private void CloseWindow(InputAction.CallbackContext context)
@@ -128,22 +152,44 @@ public class OpenMenuInputHandler : MonoBehaviour
         if (isBookOpen.value)
         {
             isBookOpen.value = false;
-            updateUI.Raise();
+            windowVisibilityEvent.Raise();
         }
         else if (isAlchemyOpen.value)
         {
             isAlchemyOpen.value = false;
-            updateUI.Raise();
+            windowVisibilityEvent.Raise();
         }
         if (!isBookOpen.value && !isAlchemyOpen.value)
         {
-            inputs.Player.Enable();
-            inputs.UINavigation.Disable();
+            EnablePlayerMovement();
         }
     }
 
-    private void SendUpdateUIEvent()
+    private void SendWindowVisibilityEvent()
     {
-        updateUI.Raise();
+        windowVisibilityEvent.Raise();
+    }
+
+    private void Test(InputAction.CallbackContext context)
+    {
+        Debug.Log("i can press things :)");
+    }
+
+    private void EnablePlayerMovement()
+    {
+        inputs.Player.Enable();
+        canPlayerMove.value = true;
+        inputs.UINavigation.Disable();
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void DisablePlayerMovement()
+    {
+        inputs.Player.Disable();
+        canPlayerMove.value = false;
+        inputs.UINavigation.Enable();
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }

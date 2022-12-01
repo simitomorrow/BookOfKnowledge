@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_Alchemy: UI_Window
+public class UI_Alchemy: MonoBehaviour
 {
     [SerializeField] private ElixirList allElixirs;
     [SerializeField] private ElixirData garbage;
@@ -26,11 +26,6 @@ public class UI_Alchemy: UI_Window
     private void Start()
     {
         InitializeInventoryUI();
-    }
-
-    public override void CheckWindowOpen()
-    {
-        throw new System.NotImplementedException();
     }
 
     private void InitializeInventoryUI()

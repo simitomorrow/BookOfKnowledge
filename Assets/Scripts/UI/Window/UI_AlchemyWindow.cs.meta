@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: e087ecce43ebbff45a1b360637807d93
+guid: e5cc5de4e6f729d409bc6df949b86b45
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - canMove: {fileID: 11400000, guid: e29794150a35a60478bc68a2a0fc99e9, type: 2}
+  - isAlchemyVisible: {fileID: 11400000, guid: a48d2373c3d3cac4fb2a7f46886b9aea, type: 2}
+  - alchemyUI: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

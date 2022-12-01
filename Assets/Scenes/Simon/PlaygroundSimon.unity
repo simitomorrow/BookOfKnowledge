@@ -232,6 +232,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1274704170763966665, guid: 284bdcccd0660304e9feaf2107851fb3, type: 3}
+      propertyPath: canMove
+      value: 
+      objectReference: {fileID: 11400000, guid: e29794150a35a60478bc68a2a0fc99e9, type: 2}
     - target: {fileID: 2762157037281271311, guid: 284bdcccd0660304e9feaf2107851fb3, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -940,6 +944,10 @@ PrefabInstance:
     - target: {fileID: 4931687052500860672, guid: c0f521a5c516b92448b7bc48b23a2ab5, type: 3}
       propertyPath: m_Name
       value: LoadUIScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931687052500860672, guid: c0f521a5c516b92448b7bc48b23a2ab5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4931687052500860675, guid: c0f521a5c516b92448b7bc48b23a2ab5, type: 3}
       propertyPath: m_RootOrder

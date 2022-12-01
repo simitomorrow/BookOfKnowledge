@@ -255,6 +255,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "ToggleBookOpen",
+                    "type": "Button",
+                    "id": "5cf353dc-c6fb-414f-8e34-39edf14a98df",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "OpenMainMenu",
                     "type": "Button",
                     "id": "726641a1-1809-43f8-bfd8-29acebb91fd0",
@@ -323,8 +332,19 @@
                 },
                 {
                     "name": "",
+                    "id": "7f1246c1-eb9f-4b33-84b1-a062ee0b8c7d",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseWindow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4935b997-c377-4e32-bc8f-78de7fafde36",
-                    "path": "<Keyboard>/tab",
+                    "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
@@ -452,6 +472,17 @@
                     "action": "OpenAlchemy",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5bec476-779e-4bf6-96e0-a413066de927",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleBookOpen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -460,7 +491,7 @@
             "id": "47385caa-56c1-467a-99f8-225069623f28",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Debug",
                     "type": "Button",
                     "id": "6d6414b5-6da0-455a-8eef-a792796a1f20",
                     "expectedControlType": "Button",
@@ -473,11 +504,11 @@
                 {
                     "name": "",
                     "id": "bd29f218-aae4-4ffe-a22e-67ccfec9053f",
-                    "path": "",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Debug",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

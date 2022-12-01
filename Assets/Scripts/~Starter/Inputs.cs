@@ -277,6 +277,15 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""ToggleBookOpen"",
+                    ""type"": ""Button"",
+                    ""id"": ""5cf353dc-c6fb-414f-8e34-39edf14a98df"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""OpenMainMenu"",
                     ""type"": ""Button"",
                     ""id"": ""726641a1-1809-43f8-bfd8-29acebb91fd0"",
@@ -345,8 +354,19 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""7f1246c1-eb9f-4b33-84b1-a062ee0b8c7d"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CloseWindow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""4935b997-c377-4e32-bc8f-78de7fafde36"",
-                    ""path"": ""<Keyboard>/tab"",
+                    ""path"": ""<Keyboard>/m"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""KeyboardMouse"",
@@ -474,6 +494,17 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""action"": ""OpenAlchemy"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e5bec476-779e-4bf6-96e0-a413066de927"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleBookOpen"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -482,7 +513,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
             ""id"": ""47385caa-56c1-467a-99f8-225069623f28"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""Debug"",
                     ""type"": ""Button"",
                     ""id"": ""6d6414b5-6da0-455a-8eef-a792796a1f20"",
                     ""expectedControlType"": ""Button"",
@@ -495,11 +526,11 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""bd29f218-aae4-4ffe-a22e-67ccfec9053f"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Debug"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -566,6 +597,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         // Book
         m_Book = asset.FindActionMap("Book", throwIfNotFound: true);
         m_Book_CloseWindow = m_Book.FindAction("CloseWindow", throwIfNotFound: true);
+        m_Book_ToggleBookOpen = m_Book.FindAction("ToggleBookOpen", throwIfNotFound: true);
         m_Book_OpenMainMenu = m_Book.FindAction("OpenMainMenu", throwIfNotFound: true);
         m_Book_OpenIngredients = m_Book.FindAction("OpenIngredients", throwIfNotFound: true);
         m_Book_OpenElixirs = m_Book.FindAction("OpenElixirs", throwIfNotFound: true);
@@ -574,7 +606,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         m_Book_OpenAlchemy = m_Book.FindAction("OpenAlchemy", throwIfNotFound: true);
         // UINavigation
         m_UINavigation = asset.FindActionMap("UINavigation", throwIfNotFound: true);
-        m_UINavigation_Newaction = m_UINavigation.FindAction("New action", throwIfNotFound: true);
+        m_UINavigation_Debug = m_UINavigation.FindAction("Debug", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -700,6 +732,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Book;
     private IBookActions m_BookActionsCallbackInterface;
     private readonly InputAction m_Book_CloseWindow;
+    private readonly InputAction m_Book_ToggleBookOpen;
     private readonly InputAction m_Book_OpenMainMenu;
     private readonly InputAction m_Book_OpenIngredients;
     private readonly InputAction m_Book_OpenElixirs;
@@ -711,6 +744,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         private @Inputs m_Wrapper;
         public BookActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @CloseWindow => m_Wrapper.m_Book_CloseWindow;
+        public InputAction @ToggleBookOpen => m_Wrapper.m_Book_ToggleBookOpen;
         public InputAction @OpenMainMenu => m_Wrapper.m_Book_OpenMainMenu;
         public InputAction @OpenIngredients => m_Wrapper.m_Book_OpenIngredients;
         public InputAction @OpenElixirs => m_Wrapper.m_Book_OpenElixirs;
@@ -729,6 +763,9 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @CloseWindow.started -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
                 @CloseWindow.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
                 @CloseWindow.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
+                @ToggleBookOpen.started -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
+                @ToggleBookOpen.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
+                @ToggleBookOpen.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
                 @OpenMainMenu.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
                 @OpenMainMenu.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
                 @OpenMainMenu.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
@@ -754,6 +791,9 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @CloseWindow.started += instance.OnCloseWindow;
                 @CloseWindow.performed += instance.OnCloseWindow;
                 @CloseWindow.canceled += instance.OnCloseWindow;
+                @ToggleBookOpen.started += instance.OnToggleBookOpen;
+                @ToggleBookOpen.performed += instance.OnToggleBookOpen;
+                @ToggleBookOpen.canceled += instance.OnToggleBookOpen;
                 @OpenMainMenu.started += instance.OnOpenMainMenu;
                 @OpenMainMenu.performed += instance.OnOpenMainMenu;
                 @OpenMainMenu.canceled += instance.OnOpenMainMenu;
@@ -780,12 +820,12 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     // UINavigation
     private readonly InputActionMap m_UINavigation;
     private IUINavigationActions m_UINavigationActionsCallbackInterface;
-    private readonly InputAction m_UINavigation_Newaction;
+    private readonly InputAction m_UINavigation_Debug;
     public struct UINavigationActions
     {
         private @Inputs m_Wrapper;
         public UINavigationActions(@Inputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_UINavigation_Newaction;
+        public InputAction @Debug => m_Wrapper.m_UINavigation_Debug;
         public InputActionMap Get() { return m_Wrapper.m_UINavigation; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -795,16 +835,16 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_UINavigationActionsCallbackInterface != null)
             {
-                @Newaction.started -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnNewaction;
-                @Newaction.performed -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnNewaction;
-                @Newaction.canceled -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnNewaction;
+                @Debug.started -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnDebug;
+                @Debug.performed -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnDebug;
+                @Debug.canceled -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnDebug;
             }
             m_Wrapper.m_UINavigationActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Newaction.started += instance.OnNewaction;
-                @Newaction.performed += instance.OnNewaction;
-                @Newaction.canceled += instance.OnNewaction;
+                @Debug.started += instance.OnDebug;
+                @Debug.performed += instance.OnDebug;
+                @Debug.canceled += instance.OnDebug;
             }
         }
     }
@@ -856,6 +896,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     public interface IBookActions
     {
         void OnCloseWindow(InputAction.CallbackContext context);
+        void OnToggleBookOpen(InputAction.CallbackContext context);
         void OnOpenMainMenu(InputAction.CallbackContext context);
         void OnOpenIngredients(InputAction.CallbackContext context);
         void OnOpenElixirs(InputAction.CallbackContext context);
@@ -865,6 +906,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     }
     public interface IUINavigationActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnDebug(InputAction.CallbackContext context);
     }
 }
