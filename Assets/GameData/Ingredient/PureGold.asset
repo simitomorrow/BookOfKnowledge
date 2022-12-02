@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41d03433c1fae664ba9dc855fe0833a0, type: 3}
-  m_Name: CoolShroom
+  m_Name: PureGold
   m_EditorClassIdentifier: 
-  ingredientName: CoolShroom
-  description: It does the thing
-  thumbnail: {fileID: 21300000, guid: e9be5435fe0b9fa45a92f1f35df41f5b, type: 3}
+  ingredientName: Ingredient2
+  description: 'Gedeiht meist an freundlichen und hellen Orten.
+
+'
+  thumbnail: {fileID: 0}
   mainImage: {fileID: 0}
-  effect1: {fileID: 11400000, guid: 8396206633961cc4da4e5df47c02522e, type: 2}
+  effect1: {fileID: 11400000, guid: e9e43b7d9e4a19649b03e8017553e44c, type: 2}
   effect1Discovered: 0
-  effect2: {fileID: 11400000, guid: 619ce42e834d344499becc70e2cd3db2, type: 2}
+  effect2: {fileID: 11400000, guid: 13ef06d0c9f42904aa605f7dd3a9e580, type: 2}
   effect2Discovered: 0
   effect3: {fileID: 11400000, guid: bc13e74e9859fe841a15381285f79ced, type: 2}
   effect3Discovered: 0
-  amountOwned: 123
+  amountOwned: 0

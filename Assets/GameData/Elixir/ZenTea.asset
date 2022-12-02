@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130bfebed765654db5afc65e9256d14, type: 3}
-  m_Name: Eistee
+  m_Name: ZenTea
   m_EditorClassIdentifier: 
-  elixirName: Eistee
-  description: "Ideal f\xFCr heisse Sommertage.\r"
+  elixirName: Zentee
+  description: 
   thumbnail: {fileID: 0}
   mainImage: {fileID: 0}
   ingredient1: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}
-  ingredient2: {fileID: 0}
+  ingredient2: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}
   ingredient3: {fileID: 0}
   hasBeenDiscovered: 0
   amountOwned: 0
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: 199b0723a27cf664f9f8184b6f27e71c, type: 2}

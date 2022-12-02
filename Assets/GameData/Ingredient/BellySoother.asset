@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41d03433c1fae664ba9dc855fe0833a0, type: 3}
-  m_Name: Ingredient3
+  m_Name: BellySoother
   m_EditorClassIdentifier: 
-  ingredientName: Ingredient3
-  description: It does the thing
+  ingredientName: Magenwohl
+  description: "Das Magenwohl ist eine gen\xFCgsame Pflanze, die auch gut mit steinigem
+    Untergrund zurechtkommt."
   thumbnail: {fileID: 0}
   mainImage: {fileID: 0}
-  effect1: {fileID: 11400000, guid: 4f615f6adafcae242b6d00c533df0a1c, type: 2}
+  effect1: {fileID: 11400000, guid: bc13e74e9859fe841a15381285f79ced, type: 2}
   effect1Discovered: 0
-  effect2: {fileID: 11400000, guid: d04b3a3a0b3760944aefabee6e3c5e89, type: 2}
+  effect2: {fileID: 11400000, guid: 199b0723a27cf664f9f8184b6f27e71c, type: 2}
   effect2Discovered: 0
-  effect3: {fileID: 11400000, guid: e9e43b7d9e4a19649b03e8017553e44c, type: 2}
+  effect3: {fileID: 11400000, guid: 8396206633961cc4da4e5df47c02522e, type: 2}
   effect3Discovered: 0
-  amountOwned: 121
+  amountOwned: 0

@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41d03433c1fae664ba9dc855fe0833a0, type: 3}
-  m_Name: Ingredient1
+  m_Name: ZenLotus
   m_EditorClassIdentifier: 
-  ingredientName: Ingredient1
-  description: It does the thing
+  ingredientName: Zen-Lotus
+  description: "Bl\xFCten und Bl\xE4tter finden sich auf Wasseroberfl\xE4chen von
+    kleinen stehenden Gew\xE4sssern.\r"
   thumbnail: {fileID: 0}
   mainImage: {fileID: 0}
-  effect1: {fileID: 11400000, guid: bc13e74e9859fe841a15381285f79ced, type: 2}
+  effect1: {fileID: 11400000, guid: 199b0723a27cf664f9f8184b6f27e71c, type: 2}
   effect1Discovered: 0
-  effect2: {fileID: 11400000, guid: 8396206633961cc4da4e5df47c02522e, type: 2}
+  effect2: {fileID: 11400000, guid: 619ce42e834d344499becc70e2cd3db2, type: 2}
   effect2Discovered: 0
-  effect3: {fileID: 11400000, guid: e9e43b7d9e4a19649b03e8017553e44c, type: 2}
+  effect3: {fileID: 11400000, guid: 4ac79f51dff798e4097007485635887a, type: 2}
   effect3Discovered: 0
-  amountOwned: 121
+  amountOwned: 0

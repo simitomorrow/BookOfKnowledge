@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41d03433c1fae664ba9dc855fe0833a0, type: 3}
-  m_Name: Magenwohl
+  m_Name: BloodFern
   m_EditorClassIdentifier: 
-  ingredientName: Magenwohl
-  description: "Das Magenwohl ist eine gen\xFCgsame Pflanze, die auch gut mit steinigem
-    Untergrund zurechtkommt."
+  ingredientName: Blutfarn
+  description: "W\xE4chst vor allem an feuchten und schattigen Orten.\r\n"
   thumbnail: {fileID: 0}
   mainImage: {fileID: 0}
-  effect1: {fileID: 11400000, guid: 199b0723a27cf664f9f8184b6f27e71c, type: 2}
+  effect1: {fileID: 11400000, guid: e9e43b7d9e4a19649b03e8017553e44c, type: 2}
   effect1Discovered: 0
-  effect2: {fileID: 0}
+  effect2: {fileID: 11400000, guid: 619ce42e834d344499becc70e2cd3db2, type: 2}
   effect2Discovered: 0
-  effect3: {fileID: 0}
+  effect3: {fileID: 11400000, guid: 4f615f6adafcae242b6d00c533df0a1c, type: 2}
   effect3Discovered: 0
   amountOwned: 0
