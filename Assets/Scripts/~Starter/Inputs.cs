@@ -262,6 +262,279 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Book"",
+            ""id"": ""3572deda-29b4-4810-a0a9-caaa25252856"",
+            ""actions"": [
+                {
+                    ""name"": ""CloseWindow"",
+                    ""type"": ""Button"",
+                    ""id"": ""fae57bdb-cd4a-47a9-baf5-b2eeef881feb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleBookOpen"",
+                    ""type"": ""Button"",
+                    ""id"": ""5cf353dc-c6fb-414f-8e34-39edf14a98df"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenMainMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""726641a1-1809-43f8-bfd8-29acebb91fd0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenIngredients"",
+                    ""type"": ""Button"",
+                    ""id"": ""9f2abc42-508d-4304-856d-8c5b37ec0e42"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenElixirs"",
+                    ""type"": ""Button"",
+                    ""id"": ""cda860ef-920d-4859-bb81-5ae1ea34503c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenIncidents"",
+                    ""type"": ""Button"",
+                    ""id"": ""623d6c90-f7c3-489c-b6d4-546a666927a3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenMap"",
+                    ""type"": ""Button"",
+                    ""id"": ""5c3758e0-84e8-4d0b-b88f-712938b14c06"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenAlchemy"",
+                    ""type"": ""Button"",
+                    ""id"": ""bfbd941d-5cd2-4fb8-87dc-ba206b0268ec"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""c4c78189-6fbd-428e-ba2d-ce31cb99e68e"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""CloseWindow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7f1246c1-eb9f-4b33-84b1-a062ee0b8c7d"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CloseWindow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4935b997-c377-4e32-bc8f-78de7fafde36"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenMap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""056bf9d6-0d51-4731-af1b-2e27f3d61f4e"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenIncidents"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""03ddf00c-9f66-479f-9713-05a3ecd69a09"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenIncidents"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ef0be8b9-e491-429c-8fbd-9fc8f145fe74"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenMainMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""db71a1b7-e7f8-48d8-a25b-8623f689bad0"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenMainMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b459341b-a153-4d64-9499-61c0bf52174e"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenIngredients"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8efc085c-4dbd-4301-b764-acb0bd39bd0b"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenIngredients"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b356278-9f03-461f-8bc8-21905474fd21"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenElixirs"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dbe246f7-cfa6-4f53-afa2-790b9699b847"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenElixirs"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6041b4b8-c343-4baa-9e40-6c7a5e1d3a67"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenMap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c5897b3-ecf9-4aac-9246-90b2b15c4ef6"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenAlchemy"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""13865158-19bf-4eab-8d5c-151287209387"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""OpenAlchemy"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e5bec476-779e-4bf6-96e0-a413066de927"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleBookOpen"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""UINavigation"",
+            ""id"": ""47385caa-56c1-467a-99f8-225069623f28"",
+            ""actions"": [
+                {
+                    ""name"": ""Debug"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d6414b5-6da0-455a-8eef-a792796a1f20"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""bd29f218-aae4-4ffe-a22e-67ccfec9053f"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Debug"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -321,6 +594,19 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        // Book
+        m_Book = asset.FindActionMap("Book", throwIfNotFound: true);
+        m_Book_CloseWindow = m_Book.FindAction("CloseWindow", throwIfNotFound: true);
+        m_Book_ToggleBookOpen = m_Book.FindAction("ToggleBookOpen", throwIfNotFound: true);
+        m_Book_OpenMainMenu = m_Book.FindAction("OpenMainMenu", throwIfNotFound: true);
+        m_Book_OpenIngredients = m_Book.FindAction("OpenIngredients", throwIfNotFound: true);
+        m_Book_OpenElixirs = m_Book.FindAction("OpenElixirs", throwIfNotFound: true);
+        m_Book_OpenIncidents = m_Book.FindAction("OpenIncidents", throwIfNotFound: true);
+        m_Book_OpenMap = m_Book.FindAction("OpenMap", throwIfNotFound: true);
+        m_Book_OpenAlchemy = m_Book.FindAction("OpenAlchemy", throwIfNotFound: true);
+        // UINavigation
+        m_UINavigation = asset.FindActionMap("UINavigation", throwIfNotFound: true);
+        m_UINavigation_Debug = m_UINavigation.FindAction("Debug", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -441,6 +727,128 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Book
+    private readonly InputActionMap m_Book;
+    private IBookActions m_BookActionsCallbackInterface;
+    private readonly InputAction m_Book_CloseWindow;
+    private readonly InputAction m_Book_ToggleBookOpen;
+    private readonly InputAction m_Book_OpenMainMenu;
+    private readonly InputAction m_Book_OpenIngredients;
+    private readonly InputAction m_Book_OpenElixirs;
+    private readonly InputAction m_Book_OpenIncidents;
+    private readonly InputAction m_Book_OpenMap;
+    private readonly InputAction m_Book_OpenAlchemy;
+    public struct BookActions
+    {
+        private @Inputs m_Wrapper;
+        public BookActions(@Inputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @CloseWindow => m_Wrapper.m_Book_CloseWindow;
+        public InputAction @ToggleBookOpen => m_Wrapper.m_Book_ToggleBookOpen;
+        public InputAction @OpenMainMenu => m_Wrapper.m_Book_OpenMainMenu;
+        public InputAction @OpenIngredients => m_Wrapper.m_Book_OpenIngredients;
+        public InputAction @OpenElixirs => m_Wrapper.m_Book_OpenElixirs;
+        public InputAction @OpenIncidents => m_Wrapper.m_Book_OpenIncidents;
+        public InputAction @OpenMap => m_Wrapper.m_Book_OpenMap;
+        public InputAction @OpenAlchemy => m_Wrapper.m_Book_OpenAlchemy;
+        public InputActionMap Get() { return m_Wrapper.m_Book; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(BookActions set) { return set.Get(); }
+        public void SetCallbacks(IBookActions instance)
+        {
+            if (m_Wrapper.m_BookActionsCallbackInterface != null)
+            {
+                @CloseWindow.started -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
+                @CloseWindow.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
+                @CloseWindow.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
+                @ToggleBookOpen.started -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
+                @ToggleBookOpen.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
+                @ToggleBookOpen.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
+                @OpenMainMenu.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
+                @OpenMainMenu.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
+                @OpenMainMenu.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
+                @OpenIngredients.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIngredients;
+                @OpenIngredients.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIngredients;
+                @OpenIngredients.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIngredients;
+                @OpenElixirs.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenElixirs;
+                @OpenElixirs.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenElixirs;
+                @OpenElixirs.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenElixirs;
+                @OpenIncidents.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIncidents;
+                @OpenIncidents.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIncidents;
+                @OpenIncidents.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIncidents;
+                @OpenMap.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMap;
+                @OpenMap.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMap;
+                @OpenMap.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMap;
+                @OpenAlchemy.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenAlchemy;
+                @OpenAlchemy.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenAlchemy;
+                @OpenAlchemy.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenAlchemy;
+            }
+            m_Wrapper.m_BookActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @CloseWindow.started += instance.OnCloseWindow;
+                @CloseWindow.performed += instance.OnCloseWindow;
+                @CloseWindow.canceled += instance.OnCloseWindow;
+                @ToggleBookOpen.started += instance.OnToggleBookOpen;
+                @ToggleBookOpen.performed += instance.OnToggleBookOpen;
+                @ToggleBookOpen.canceled += instance.OnToggleBookOpen;
+                @OpenMainMenu.started += instance.OnOpenMainMenu;
+                @OpenMainMenu.performed += instance.OnOpenMainMenu;
+                @OpenMainMenu.canceled += instance.OnOpenMainMenu;
+                @OpenIngredients.started += instance.OnOpenIngredients;
+                @OpenIngredients.performed += instance.OnOpenIngredients;
+                @OpenIngredients.canceled += instance.OnOpenIngredients;
+                @OpenElixirs.started += instance.OnOpenElixirs;
+                @OpenElixirs.performed += instance.OnOpenElixirs;
+                @OpenElixirs.canceled += instance.OnOpenElixirs;
+                @OpenIncidents.started += instance.OnOpenIncidents;
+                @OpenIncidents.performed += instance.OnOpenIncidents;
+                @OpenIncidents.canceled += instance.OnOpenIncidents;
+                @OpenMap.started += instance.OnOpenMap;
+                @OpenMap.performed += instance.OnOpenMap;
+                @OpenMap.canceled += instance.OnOpenMap;
+                @OpenAlchemy.started += instance.OnOpenAlchemy;
+                @OpenAlchemy.performed += instance.OnOpenAlchemy;
+                @OpenAlchemy.canceled += instance.OnOpenAlchemy;
+            }
+        }
+    }
+    public BookActions @Book => new BookActions(this);
+
+    // UINavigation
+    private readonly InputActionMap m_UINavigation;
+    private IUINavigationActions m_UINavigationActionsCallbackInterface;
+    private readonly InputAction m_UINavigation_Debug;
+    public struct UINavigationActions
+    {
+        private @Inputs m_Wrapper;
+        public UINavigationActions(@Inputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Debug => m_Wrapper.m_UINavigation_Debug;
+        public InputActionMap Get() { return m_Wrapper.m_UINavigation; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UINavigationActions set) { return set.Get(); }
+        public void SetCallbacks(IUINavigationActions instance)
+        {
+            if (m_Wrapper.m_UINavigationActionsCallbackInterface != null)
+            {
+                @Debug.started -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnDebug;
+                @Debug.performed -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnDebug;
+                @Debug.canceled -= m_Wrapper.m_UINavigationActionsCallbackInterface.OnDebug;
+            }
+            m_Wrapper.m_UINavigationActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Debug.started += instance.OnDebug;
+                @Debug.performed += instance.OnDebug;
+                @Debug.canceled += instance.OnDebug;
+            }
+        }
+    }
+    public UINavigationActions @UINavigation => new UINavigationActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -484,5 +892,20 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+    }
+    public interface IBookActions
+    {
+        void OnCloseWindow(InputAction.CallbackContext context);
+        void OnToggleBookOpen(InputAction.CallbackContext context);
+        void OnOpenMainMenu(InputAction.CallbackContext context);
+        void OnOpenIngredients(InputAction.CallbackContext context);
+        void OnOpenElixirs(InputAction.CallbackContext context);
+        void OnOpenIncidents(InputAction.CallbackContext context);
+        void OnOpenMap(InputAction.CallbackContext context);
+        void OnOpenAlchemy(InputAction.CallbackContext context);
+    }
+    public interface IUINavigationActions
+    {
+        void OnDebug(InputAction.CallbackContext context);
     }
 }

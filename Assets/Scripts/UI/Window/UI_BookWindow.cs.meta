@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 55db08b61025f714fb3072d4ad7658db
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - isBookVisible: {fileID: 11400000, guid: 8208ef86b591d0247b9ae2c0660ec968, type: 2}
+  - bookUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

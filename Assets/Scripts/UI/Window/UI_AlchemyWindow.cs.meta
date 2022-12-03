@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e5cc5de4e6f729d409bc6df949b86b45
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - isAlchemyVisible: {fileID: 11400000, guid: a48d2373c3d3cac4fb2a7f46886b9aea, type: 2}
+  - alchemyUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
