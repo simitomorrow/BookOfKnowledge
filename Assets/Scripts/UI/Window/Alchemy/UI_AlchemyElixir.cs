@@ -12,7 +12,7 @@ public class UI_AlchemyElixir : MonoBehaviour
 
     public void ShowResult(ElixirData eData)
     {
-        thumbnail.sprite = eData.thumbnail;
+        thumbnail.sprite = eData.image;
         outOfStockTaint.gameObject.SetActive(eData.amountOwned <= 0);
         ownedAmount.text = "" + eData.amountOwned;
         elixir = eData;

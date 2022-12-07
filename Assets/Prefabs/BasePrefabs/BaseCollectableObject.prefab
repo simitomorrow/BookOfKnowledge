@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2626411412000318352}
   - component: {fileID: 2626411412000318349}
   - component: {fileID: 2626411412000318350}
-  - component: {fileID: 2626411412000318351}
+  - component: {fileID: 3072779882684793845}
   m_Layer: 0
   m_Name: InteractionRange
   m_TagString: Untagged
@@ -115,19 +115,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2626411412000318351
-SphereCollider:
+--- !u!114 &3072779882684793845
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2626411412000318353}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94704cf6773d3164f8edbf60e4eadb26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractionRangeVisible: {fileID: 11400000, guid: c803f7f4ed3de444582b660962ea3faa, type: 2}
 --- !u!1 &2626411413562693471
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,3 +189,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactables: {fileID: 11400000, guid: fc8e22470d2eb414a80430f7c687a04d, type: 2}
+  ingredient: {fileID: 0}

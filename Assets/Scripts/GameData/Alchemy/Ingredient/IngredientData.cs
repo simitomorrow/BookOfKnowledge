@@ -8,8 +8,9 @@ public class IngredientData : ScriptableObject
     public string ingredientName;
     [TextArea(3, 10)]
     public string description;
-    public Sprite thumbnail;
-    public Sprite mainImage;
+    public Sprite image;
+    public Sprite undiscoveredImage;
+    public bool hasBeenDiscovered;
     public EffectData effect1;
     public bool effect1Discovered;
     public EffectData effect2;

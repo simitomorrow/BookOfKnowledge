@@ -5,6 +5,6 @@ public class NPC : MonoBehaviour, Interactable
 {
     public void Interact()
     {
-        Debug.Log("You talked to me.");
+        Debug.Log("TODO: DialogueWindow?");
     }
 }

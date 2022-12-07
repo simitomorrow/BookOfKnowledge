@@ -15,7 +15,7 @@ public class UI_AlchemySlot : MonoBehaviour
 
     public void Initialize(IngredientData iData)
     {
-        thumbnail.sprite = iData.thumbnail;
+        thumbnail.sprite = iData.image;
         outOfStockTaint.gameObject.SetActive(iData.amountOwned <= 0);
         ownedAmount.text = "" + iData.amountOwned;
         ingredient = iData;

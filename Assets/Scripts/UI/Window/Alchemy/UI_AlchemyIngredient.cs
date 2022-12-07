@@ -15,7 +15,13 @@ public class UI_AlchemyIngredient : MonoBehaviour
 
     public void Initialize(IngredientData iData)
     {
-        thumbnail.sprite = iData.thumbnail;
+        if (iData.hasBeenDiscovered)
+        {
+            thumbnail.sprite = iData.image;
+        } else
+        {
+            thumbnail.sprite = iData.undiscoveredImage;
+        }
         selectedBoarder.gameObject.SetActive(false);
         outOfStockTaint.gameObject.SetActive(iData.amountOwned <= 0);
         title.text = iData.ingredientName;
@@ -49,7 +55,7 @@ public class UI_AlchemyIngredient : MonoBehaviour
     }
 
     /*  Why is this needed?
-     *  If the SlotButton gets pressed to remove the ingredient, it shouldn't be highlighted in the inventory anymore.
+     *  If the SlotButton (current alchemy ingredient) gets pressed to remove the ingredient, it shouldn't be highlighted in the inventory anymore.
      *  Not sure if there is a prettier way...
      */ 
     public void CheckIfStillSelected()

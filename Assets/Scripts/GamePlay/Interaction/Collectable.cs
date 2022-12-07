@@ -4,9 +4,17 @@ using UnityEngine;
 public class Collectable : MonoBehaviour, Interactable
 {
     public InteractablesList interactables;
+    public IngredientData ingredient;
+
     public void Interact()
     {
-        Debug.Log("TODO: add to inventory and play a sound");
+        if (!ingredient.hasBeenDiscovered)
+        {
+            Debug.Log("TODO: new object discovered message?");
+            ingredient.hasBeenDiscovered = true;
+        }
+        ingredient.amountOwned++;
+        Debug.Log("TODO: play a sound");
         interactables.list.Remove(this);
         Destroy(this.gameObject);
     }

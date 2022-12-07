@@ -8,8 +8,8 @@ public class ElixirData : ScriptableObject
     public string elixirName;
     [TextArea(3, 10)]
     public string description;
-    public Sprite thumbnail;
-    public Sprite mainImage;
+    public Sprite image;
+    public Sprite undiscoveredImage;
     public IngredientData ingredient1;
     public IngredientData ingredient2;
     public IngredientData ingredient3;
