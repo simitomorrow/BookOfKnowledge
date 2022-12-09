@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d03433c1fae664ba9dc855fe0833a0, type: 3}
   m_Name: PureGold
   m_EditorClassIdentifier: 
-  ingredientName: Ingredient2
+  ingredientName: Reingold
   description: 'Gedeiht meist an freundlichen und hellen Orten.
 
 '

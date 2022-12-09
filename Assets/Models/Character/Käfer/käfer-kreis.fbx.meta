@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 9a7e70dc93d1422409f6fa2ecd0e56fd
+guid: eb3961f1c1c34564ea52e40b2aa7d5cd
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -1498010087492872569
+    second: CINEMA_4D_Main
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -95,7 +98,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
