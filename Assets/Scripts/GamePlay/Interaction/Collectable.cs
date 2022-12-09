@@ -5,6 +5,7 @@ public class Collectable : MonoBehaviour, Interactable
 {
     public InteractablesList interactables;
     public IngredientData ingredient;
+    public GameEvent event_UI_updateOwnedAmount;
 
     public void Interact()
     {
@@ -14,6 +15,7 @@ public class Collectable : MonoBehaviour, Interactable
             ingredient.hasBeenDiscovered = true;
         }
         ingredient.amountOwned++;
+        event_UI_updateOwnedAmount.Raise();
         Debug.Log("TODO: play a sound");
         interactables.list.Remove(this);
         Destroy(this.gameObject);
