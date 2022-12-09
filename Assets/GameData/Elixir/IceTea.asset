@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirName: Eistee
   description: "Ideal f\xFCr heisse Sommertage.\r"
-  image: {fileID: 21300000, guid: d62b5127d46680848a6d044778538aef, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: 465c3a63ae42a994da66dd7d3cfb884c, type: 3}
+  image: {fileID: 21300000, guid: 9ec948463dcd03e43aa06cec83ccf589, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: d4f1589acd0c5fa498e751657a905db6, type: 3}
   ingredient1: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}
   ingredient2: {fileID: 0}
   ingredient3: {fileID: 0}

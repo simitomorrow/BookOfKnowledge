@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FeverReducingPotion
   m_EditorClassIdentifier: 
   elixirName: Fiebersenkender Trank
-  description: 
-  image: {fileID: 21300000, guid: 99d7e6d37f94b2143a189f5130e3bd8d, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: e3186eb5920f10547916c36764cbffdf, type: 3}
+  description: "Wirkt k\xFChlend und beruhigt das Gem\xFCt."
+  image: {fileID: 21300000, guid: 118d534a36bba8a4b8bef4afe81b53f3, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 08a18d2dea10e054f91ad7602177ec56, type: 3}
   ingredient1: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}
   ingredient2: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}
   ingredient3: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}

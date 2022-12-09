@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AntiNausea
   m_EditorClassIdentifier: 
   elixirName: Antibrech
-  description: 
-  image: {fileID: 21300000, guid: ae6292bccb9d9ca4c95e6355a0f90149, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: 68cbbe999bee2344895327ed151fe52e, type: 3}
+  description: "Beruhigt den Magen bei \xDCberlkeit und lindert Schweissausbr\xFCche."
+  image: {fileID: 21300000, guid: 12c1650ba5db8e14baa791fe74a302e2, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: b6386713302a4ed469eee03bbba7dca4, type: 3}
   ingredient1: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}
   ingredient2: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}
   ingredient3: {fileID: 11400000, guid: 747827af63a23084798be31014527d28, type: 2}

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirName: 'Blutfarntee '
   description: "Fast so gut wie Kaffee!\r"
-  image: {fileID: 21300000, guid: 99d7e6d37f94b2143a189f5130e3bd8d, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: e3186eb5920f10547916c36764cbffdf, type: 3}
+  image: {fileID: 21300000, guid: 21817773050bd3e4985fff507c5f490b, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 0065f56b158520a449614ce6ae0befbc, type: 3}
   ingredient1: {fileID: 11400000, guid: c2e899e16b0a5254b86754eb977cdaed, type: 2}
   ingredient2: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}
   ingredient3: {fileID: 0}

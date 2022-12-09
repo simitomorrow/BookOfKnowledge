@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SnakeAntitoxin
   m_EditorClassIdentifier: 
   elixirName: Schlangenantitoxin
-  description: 
-  image: {fileID: 21300000, guid: ae6292bccb9d9ca4c95e6355a0f90149, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: 68cbbe999bee2344895327ed151fe52e, type: 3}
+  description: Neutralisiert Schlangengift und regt den Kreislauf an.
+  image: {fileID: 21300000, guid: 603c3778f3ffb204dbfa4ff74093d445, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: ef8e89722a86100459fd60793cbe499d, type: 3}
   ingredient1: {fileID: 11400000, guid: 747827af63a23084798be31014527d28, type: 2}
   ingredient2: {fileID: 11400000, guid: c2e899e16b0a5254b86754eb977cdaed, type: 2}
   ingredient3: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}

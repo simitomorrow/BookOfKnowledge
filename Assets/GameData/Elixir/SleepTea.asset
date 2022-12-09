@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SleepTea
   m_EditorClassIdentifier: 
   elixirName: Schlaftee
-  description: 
-  image: {fileID: 21300000, guid: d62b5127d46680848a6d044778538aef, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: 465c3a63ae42a994da66dd7d3cfb884c, type: 3}
+  description: Mit etwas Honig hilft dieser Tee bei Schlaflosigkeit.
+  image: {fileID: 21300000, guid: d0eaf075cf1b3504cb7acd03b15b5e01, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 76edf5e6e279a46439b4914771d96fca, type: 3}
   ingredient1: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}
   ingredient2: {fileID: 11400000, guid: c2e899e16b0a5254b86754eb977cdaed, type: 2}
   ingredient3: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}

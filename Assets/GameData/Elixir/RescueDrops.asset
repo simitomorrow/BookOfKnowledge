@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RescueDrops
   m_EditorClassIdentifier: 
   elixirName: Notfalltropfen
-  description: 
-  image: {fileID: 21300000, guid: d48caa9f49a7ae84da470d386693264f, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: 8e0fad25e70b0cc48ab8940b8a7f8f04, type: 3}
+  description: Helfen sehr schnell bei Panikattacken.
+  image: {fileID: 21300000, guid: 831d088c70ae2ec4fa683e100641e523, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 70013d619792f8042a0d663f5dc2203f, type: 3}
   ingredient1: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}
   ingredient2: {fileID: 11400000, guid: 747827af63a23084798be31014527d28, type: 2}
   ingredient3: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}

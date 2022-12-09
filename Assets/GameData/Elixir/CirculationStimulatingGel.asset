@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CirculationStimulatingGel
   m_EditorClassIdentifier: 
   elixirName: "Durchblutungsf\xF6rderndes Gel"
-  description: 
-  image: {fileID: 21300000, guid: d48caa9f49a7ae84da470d386693264f, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: 8e0fad25e70b0cc48ab8940b8a7f8f04, type: 3}
+  description: Bei Muskelschmerzen einreiben. Nicht zum Verzehr geeignet!
+  image: {fileID: 21300000, guid: 7f8285e53b5fc4f43b18628a7549969d, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: a7aec58f3a3182a47a183dcd61d9da99, type: 3}
   ingredient1: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}
   ingredient2: {fileID: 11400000, guid: c2e899e16b0a5254b86754eb977cdaed, type: 2}
   ingredient3: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}
