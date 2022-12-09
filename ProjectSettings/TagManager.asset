@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - House
+  - HouseViewPoint
   layers:
   - Default
   - TransparentFX
