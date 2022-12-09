@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirName: Zentee
   description: 
-  thumbnail: {fileID: 0}
-  mainImage: {fileID: 0}
+  image: {fileID: 21300000, guid: d48caa9f49a7ae84da470d386693264f, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 8e0fad25e70b0cc48ab8940b8a7f8f04, type: 3}
   ingredient1: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}
   ingredient2: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}
   ingredient3: {fileID: 0}

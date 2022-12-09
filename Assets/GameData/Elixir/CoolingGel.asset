@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirName: "K\xFChlgel"
   description: 
-  thumbnail: {fileID: 0}
-  mainImage: {fileID: 0}
+  image: {fileID: 21300000, guid: d62b5127d46680848a6d044778538aef, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 465c3a63ae42a994da66dd7d3cfb884c, type: 3}
   ingredient1: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}
   ingredient2: {fileID: 11400000, guid: c2e899e16b0a5254b86754eb977cdaed, type: 2}
   ingredient3: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}

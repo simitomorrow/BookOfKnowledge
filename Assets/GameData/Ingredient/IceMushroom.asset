@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Eispilz
   description: "Liebt ein k\xFChles Klima.\r"
-  thumbnail: {fileID: 21300000, guid: e9be5435fe0b9fa45a92f1f35df41f5b, type: 3}
-  mainImage: {fileID: 0}
+  image: {fileID: 21300000, guid: 82deb0920dfe07449b4d8da38bf99f83, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: eb792a53e2605944585f803ff81ff179, type: 3}
+  hasBeenDiscovered: 0
   effect1: {fileID: 11400000, guid: 8396206633961cc4da4e5df47c02522e, type: 2}
   effect1Discovered: 0
   effect2: {fileID: 11400000, guid: 4f615f6adafcae242b6d00c533df0a1c, type: 2}
