@@ -8,7 +8,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
     [SerializeField] private PageKeyword ingredients;
     [SerializeField] private PageKeyword elixirs;
     [SerializeField] private PageKeyword incidents;
-    [SerializeField] private PageKeyword map;
 
     [SerializeField] private GameEvent windowVisibilityEvent;
     [SerializeField] private BoolVariable isBookOpen;
@@ -24,7 +23,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
     private InputAction openIngredients;
     private InputAction openElixirs;
     private InputAction openIncidents;
-    private InputAction openMap;
     private InputAction openAlchemy;
     private InputAction closeWindow;
 
@@ -67,10 +65,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
         openIncidents.Enable();
         openIncidents.performed += OpenIncidents;
 
-        openMap = inputs.Book.OpenMap;
-        openMap.Enable();
-        openMap.performed += OpenMap;
-
         openAlchemy = inputs.Book.OpenAlchemy;
         openAlchemy.Enable();
         openAlchemy.performed += OpenAlchemy;
@@ -91,7 +85,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
         openIngredients.Disable();
         openElixirs.Disable();
         openIncidents.Disable();
-        openMap.Disable();
         openAlchemy.Disable();
     }
 
@@ -134,11 +127,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
     private void OpenIncidents(InputAction.CallbackContext context)
     {
         OpenBookPage(incidents);
-    }
-
-    private void OpenMap(InputAction.CallbackContext context)
-    {
-        OpenBookPage(map);
     }
 
     private void OpenAlchemy(InputAction.CallbackContext context)

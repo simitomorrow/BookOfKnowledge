@@ -19,9 +19,9 @@ MonoBehaviour:
   undiscoveredImage: {fileID: 21300000, guid: 028234dc5fad52f41a51f30d38ee59f5, type: 3}
   hasBeenDiscovered: 0
   effect1: {fileID: 11400000, guid: bc13e74e9859fe841a15381285f79ced, type: 2}
-  effect1Discovered: 1
+  effect1Discovered: 0
   effect2: {fileID: 11400000, guid: 199b0723a27cf664f9f8184b6f27e71c, type: 2}
   effect2Discovered: 0
   effect3: {fileID: 11400000, guid: 8396206633961cc4da4e5df47c02522e, type: 2}
   effect3Discovered: 0
-  amountOwned: 3
+  amountOwned: 0

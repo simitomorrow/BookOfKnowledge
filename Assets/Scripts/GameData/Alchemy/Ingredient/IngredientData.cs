@@ -8,14 +8,98 @@ public class IngredientData : ScriptableObject
     public string ingredientName;
     [TextArea(3, 10)]
     public string description;
-    public Sprite image;
-    public Sprite undiscoveredImage;
+    [SerializeField]
+    private Sprite image;
+    [SerializeField]
+    private Sprite undiscoveredImage;
     public bool hasBeenDiscovered;
-    public EffectData effect1;
+
+    [SerializeField]
+    private EffectData effect1;
     public bool effect1Discovered;
-    public EffectData effect2;
+    [SerializeField]
+    private EffectData effect2;
     public bool effect2Discovered;
-    public EffectData effect3;
+    [SerializeField]
+    private EffectData effect3;
     public bool effect3Discovered;
+
     public int amountOwned;
+
+    [SerializeField]
+    private static string undiscoveredString = "???";
+
+    public string GetNameAccordingToDiscovery()
+    {
+        if (hasBeenDiscovered)
+        {
+            return ingredientName;
+        }
+        else
+        {
+            return undiscoveredString;
+        }
+    }
+
+    public Sprite GetImageAccordingToDiscovery()
+    {
+        if (hasBeenDiscovered)
+        {
+            return image;
+        }
+        else
+        {
+            return undiscoveredImage;
+        }
+    }
+
+    public EffectData GetEffect1()
+    {
+        return effect1;
+    }
+
+    public EffectData GetEffect2()
+    {
+        return effect2;
+    }
+
+    public EffectData GetEffect3()
+    {
+        return effect3;
+    }
+
+    public EffectData GetEffect1AccordingToDiscovery()
+    {
+        if (effect1Discovered)
+        {
+            return effect1;
+        } else
+        {
+           return EffectData.GetUndiscoveredEffect();
+        }
+    }
+
+    public EffectData GetEffect2AccordingToDiscovery()
+    {
+        if (effect2Discovered)
+        {
+            return effect2;
+        }
+        else
+        {
+            return EffectData.GetUndiscoveredEffect();
+        }
+    }
+
+    public EffectData GetEffect3AccordingToDiscovery()
+    {
+        if (effect3Discovered)
+        {
+            return effect3;
+        }
+        else
+        {
+            return EffectData.GetUndiscoveredEffect();
+        }
+    }
 }

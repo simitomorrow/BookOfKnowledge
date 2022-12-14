@@ -9,6 +9,7 @@ public class UI_IncidentButton : MonoBehaviour
     public IntVariable selectedIncident;
     public GameEvent updateUIEvent;
     private int ID;
+
     public void Initialize(Sprite image, string text, int id)
     {
         thumbnail.sprite = image;
@@ -16,7 +17,7 @@ public class UI_IncidentButton : MonoBehaviour
         ID = id;
     }
 
-    public void SelectThumbnail()
+    public void SelectIncidentInUI()
     {
         selectedIncident.value = ID;
         updateUIEvent.Raise();

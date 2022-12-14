@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f3c57a6fef1d245b77afe7a95f9064, type: 3}
   m_Name: isBookOpen
   m_EditorClassIdentifier: 
-  status: 0
+  value: 1
   description: 

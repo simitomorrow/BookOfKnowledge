@@ -17,6 +17,9 @@ public class ElixirData : ScriptableObject
     public int amountOwned;
     public List<EffectData> effects;
 
+    private static string noEffect = "Kein Effekt";
+    private static string emptyText = "";
+
     public List<IngredientData> GetIngredientsOfElixir()
     {
         List<IngredientData> ingredientsOfElixir = new List<IngredientData>();
@@ -24,5 +27,55 @@ public class ElixirData : ScriptableObject
         ingredientsOfElixir.Add(ingredient2);
         ingredientsOfElixir.Add(ingredient3);
         return ingredientsOfElixir;
+    }
+    public Sprite GetImageAccordingToDiscovery()
+    {
+        return image;
+        //if (hasBeenDiscovered)
+        //{
+        //}
+        //else
+        //{
+        //    return undiscoveredImage;
+        //}
+    }
+
+    public string GetEffect1()
+    {
+        if (effects.Count >= 1)
+        {
+            EffectData effect = effects[0];
+            if (effect != null)
+            {
+                return effect.effectName;
+            }
+        }
+        return noEffect;
+    }
+
+    public string GetEffect2()
+    {
+        if (effects.Count >= 2)
+        {
+            EffectData effect = effects[1];
+            if (effect != null)
+            {
+                return effect.effectName;
+            }
+        }
+        return emptyText;
+    }
+
+    public string GetEffect3()
+    {
+        if (effects.Count >= 3)
+        {
+            EffectData effect = effects[2];
+            if (effect != null)
+            {
+                return effect.effectName;
+            }
+        }
+        return emptyText;
     }
 }

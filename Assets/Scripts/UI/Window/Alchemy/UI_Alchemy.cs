@@ -103,15 +103,15 @@ public class UI_Alchemy: MonoBehaviour
         {
             if (!ingredient.effect1Discovered)
             {
-                ingredient.effect1Discovered = elixirBrewed.effects.Contains(ingredient.effect1);
+                ingredient.effect1Discovered = elixirBrewed.effects.Contains(ingredient.GetEffect1());
             }
             if (!ingredient.effect2Discovered)
             {
-                ingredient.effect2Discovered = elixirBrewed.effects.Contains(ingredient.effect2);
+                ingredient.effect2Discovered = elixirBrewed.effects.Contains(ingredient.GetEffect2());
             }
             if (!ingredient.effect3Discovered)
             {
-                ingredient.effect3Discovered = elixirBrewed.effects.Contains(ingredient.effect3);
+                ingredient.effect3Discovered = elixirBrewed.effects.Contains(ingredient.GetEffect3());
             }
 
             ingredient.amountOwned--;
