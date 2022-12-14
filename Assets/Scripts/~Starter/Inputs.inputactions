@@ -238,6 +238,17 @@
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab2a808c-6700-4e97-857f-799b586816c3",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -300,15 +311,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "OpenMap",
-                    "type": "Button",
-                    "id": "5c3758e0-84e8-4d0b-b88f-712938b14c06",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "OpenAlchemy",
                     "type": "Button",
                     "id": "bfbd941d-5cd2-4fb8-87dc-ba206b0268ec",
@@ -338,17 +340,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "CloseWindow",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4935b997-c377-4e32-bc8f-78de7fafde36",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "OpenMap",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -442,17 +433,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6041b4b8-c343-4baa-9e40-6c7a5e1d3a67",
-                    "path": "<Keyboard>/5",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "OpenMap",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9c5897b3-ecf9-4aac-9246-90b2b15c4ef6",
                     "path": "<Keyboard>/o",
                     "interactions": "",
@@ -465,7 +445,7 @@
                 {
                     "name": "",
                     "id": "13865158-19bf-4eab-8d5c-151287209387",
-                    "path": "<Keyboard>/6",
+                    "path": "<Keyboard>/5",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe18704858df8349891d155162891f0, type: 3}
-  m_Name: ~List_All_Incidents
+  m_Script: {fileID: 11500000, guid: 2bbdb067df1c6264fa937bd1a17ec6ab, type: 3}
+  m_Name: SelectedIngredient
   m_EditorClassIdentifier: 
-  list:
-  - {fileID: 11400000, guid: 4fadf26b46e582e4ba5b5a12ba072c65, type: 2}
+  value: 0
+  description: 

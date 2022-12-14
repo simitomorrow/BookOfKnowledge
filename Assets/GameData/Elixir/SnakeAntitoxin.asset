@@ -19,7 +19,7 @@ MonoBehaviour:
   ingredient1: {fileID: 11400000, guid: 747827af63a23084798be31014527d28, type: 2}
   ingredient2: {fileID: 11400000, guid: c2e899e16b0a5254b86754eb977cdaed, type: 2}
   ingredient3: {fileID: 11400000, guid: 4dee8c723c3228443b4e007481e51678, type: 2}
-  hasBeenDiscovered: 0
+  hasBeenDiscovered: 1
   amountOwned: 0
   effects:
   - {fileID: 11400000, guid: e9e43b7d9e4a19649b03e8017553e44c, type: 2}

@@ -15,23 +15,18 @@ public class UI_AlchemyIngredient : MonoBehaviour
 
     public void Initialize(IngredientData iData)
     {
-        if (iData.hasBeenDiscovered)
-        {
-            thumbnail.sprite = iData.image;
-        } else
-        {
-            thumbnail.sprite = iData.undiscoveredImage;
-        }
+        ingredient = iData;
+        thumbnail.sprite = iData.GetImageAccordingToDiscovery();
         selectedBoarder.gameObject.SetActive(false);
         outOfStockTaint.gameObject.SetActive(iData.amountOwned <= 0);
         title.text = iData.ingredientName;
         ownedAmount.text = "" + iData.amountOwned;
-        ingredient = iData;
         isSelected = false;
     }
 
     public void UpdateOwnedAmount()
     {
+        thumbnail.sprite = ingredient.GetImageAccordingToDiscovery();
         ownedAmount.text = "" + ingredient.amountOwned;
         outOfStockTaint.gameObject.SetActive(ingredient.amountOwned <= 0);
     }
