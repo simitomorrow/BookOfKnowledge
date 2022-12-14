@@ -6,7 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - House
-  - HouseViewPoint
+  - HouseViewPoint1
+  - HouseViewPoint2
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Glow
-  - 
+  - Player parts
   - 
   - 
   - 
