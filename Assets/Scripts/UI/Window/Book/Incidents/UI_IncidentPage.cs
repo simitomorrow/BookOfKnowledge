@@ -3,7 +3,7 @@ using UnityEngine;
 public class UI_IncidentPage : MonoBehaviour, BookPage 
 {
     [SerializeField] private PageKeyword keyword;
-    [SerializeField] private GameObject incidents;
+    [SerializeField] private CanvasGroup incidents;
 
     public PageKeyword GetKeyword()
     {
@@ -12,11 +12,15 @@ public class UI_IncidentPage : MonoBehaviour, BookPage
 
     public void Hide()
     {
-        incidents.SetActive(false);
+        incidents.alpha = 0f;
+        incidents.blocksRaycasts = false;
+        incidents.interactable = false;
     }
 
     public void Show()
     {
-        incidents.SetActive(true);
+        incidents.alpha = 100f;
+        incidents.blocksRaycasts = true;
+        incidents.interactable = true;
     }
 }

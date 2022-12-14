@@ -1,22 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UI_AlchemyWindow : UI_Window
 {
     [SerializeField] private BoolVariable isAlchemyVisible;
-    [SerializeField] private GameObject alchemyUI;
+    [SerializeField] private CanvasGroup alchemyUI;
 
     public override void ToggleWindowVisible()
     {
         if (isAlchemyVisible.value)
         {
-            alchemyUI.SetActive(true);
+            alchemyUI.alpha = 100f;
+            alchemyUI.blocksRaycasts = true;
+            alchemyUI.interactable = true;
             ToggleMouseCursorVisible();
         } 
         else
         {
-            alchemyUI.SetActive(false);
+            alchemyUI.alpha = 0f;
+            alchemyUI.blocksRaycasts = false;
+            alchemyUI.interactable = false;
         }
     }
 }

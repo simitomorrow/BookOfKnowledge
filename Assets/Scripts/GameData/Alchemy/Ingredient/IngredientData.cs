@@ -29,6 +29,18 @@ public class IngredientData : ScriptableObject
     [SerializeField]
     private static string undiscoveredString = "???";
 
+    public string GetNameAccordingToDiscovery()
+    {
+        if (hasBeenDiscovered)
+        {
+            return ingredientName;
+        }
+        else
+        {
+            return undiscoveredString;
+        }
+    }
+
     public Sprite GetImageAccordingToDiscovery()
     {
         if (hasBeenDiscovered)

@@ -22,8 +22,6 @@ public class UI_Elixirs : MonoBehaviour
     public Image ingredient2;
     public Image ingredient3;
 
-    public Image unknownIngredient;
-
     private List<Button> buttons = new List<Button>();
 
     private void Start()
@@ -37,16 +35,33 @@ public class UI_Elixirs : MonoBehaviour
         int id = 0;
         foreach (ElixirData elixir in elixirs.list)
         {
-            if (elixir.hasBeenDiscovered)
+            Button button = Instantiate(buttonPrefab, buttonParent.transform);
+            UI_ElixirButton elixirButton = button.GetComponentInChildren<UI_ElixirButton>();
+            elixirButton.Initialize(elixir, id);
+            buttons.Add(button);
+            id++;
+
+            if (!elixir.hasBeenDiscovered)
             {
-                Button button = Instantiate(buttonPrefab, buttonParent.transform);
-                UI_ElixirButton elixirButton = button.GetComponentInChildren<UI_ElixirButton>();
-                elixirButton.Initialize(elixir, id);
-                buttons.Add(button);
-                id++;
+                button.gameObject.SetActive(false);
             }
         }
     }
+
+    public void UpdateDiscoveredElixirs()
+    {
+        int i = 0;
+        foreach (ElixirData elixir in elixirs.list)
+        {
+            buttons[i].gameObject.SetActive(true);
+            if (!elixir.hasBeenDiscovered)
+            {
+                buttons[i].gameObject.SetActive(false);
+            }
+            i++;
+        }
+    }
+
 
     public void SelectElixir()
     {
@@ -58,10 +73,10 @@ public class UI_Elixirs : MonoBehaviour
         int index = selectedElixir.value;
         buttons[index].Select();
         description.text = elixirs.list[index].description;
-        List<EffectData> effects = elixirs.list[index].effects;
-        effect1.text = effects[0] ? effects[0].description: "";
-        effect2.text = effects[1] ? effects[1].description: "";
-        effect3.text = effects[2] ? effects[2].description: "";
+        ElixirData elixir = elixirs.list[index];
+        effect1.text = elixir.GetEffect1().Length > 0 ? "- " + elixir.GetEffect1() : "";
+        effect2.text = elixir.GetEffect2().Length > 0 ? "- " + elixir.GetEffect2() : "";
+        effect3.text = elixir.GetEffect3().Length > 0 ? "- " + elixir.GetEffect3() : "";
         ingredient1.sprite = elixirs.list[index].ingredient1.GetImageAccordingToDiscovery();
         ingredient2.sprite = elixirs.list[index].ingredient2.GetImageAccordingToDiscovery();
         ingredient3.sprite = elixirs.list[index].ingredient3.GetImageAccordingToDiscovery();

@@ -17,6 +17,7 @@ public class ElixirData : ScriptableObject
     public int amountOwned;
     public List<EffectData> effects;
 
+    private static string noEffect = "Kein Effekt";
     private static string emptyText = "";
 
     public List<IngredientData> GetIngredientsOfElixir()
@@ -29,42 +30,51 @@ public class ElixirData : ScriptableObject
     }
     public Sprite GetImageAccordingToDiscovery()
     {
-        if (hasBeenDiscovered)
-        {
-            return image;
-        }
-        else
-        {
-            return undiscoveredImage;
-        }
+        return image;
+        //if (hasBeenDiscovered)
+        //{
+        //}
+        //else
+        //{
+        //    return undiscoveredImage;
+        //}
     }
 
     public string GetEffect1()
     {
-        EffectData effect = effects[0];
-        if (effect != null)
+        if (effects.Count >= 1)
         {
-            return effect.effectName;
+            EffectData effect = effects[0];
+            if (effect != null)
+            {
+                return effect.effectName;
+            }
         }
-        return emptyText;
+        return noEffect;
     }
 
     public string GetEffect2()
     {
-        EffectData effect = effects[1];
-        if (effect != null)
+        if (effects.Count >= 2)
         {
-            return effect.effectName;
+            EffectData effect = effects[1];
+            if (effect != null)
+            {
+                return effect.effectName;
+            }
         }
         return emptyText;
     }
 
     public string GetEffect3()
     {
-        EffectData effect = effects[2];
-        if (effect != null)
+        if (effects.Count >= 3)
         {
-            return effect.effectName;
+            EffectData effect = effects[2];
+            if (effect != null)
+            {
+                return effect.effectName;
+            }
         }
         return emptyText;
     }

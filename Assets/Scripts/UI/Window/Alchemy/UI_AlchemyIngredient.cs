@@ -26,6 +26,7 @@ public class UI_AlchemyIngredient : MonoBehaviour
 
     public void UpdateOwnedAmount()
     {
+        thumbnail.sprite = ingredient.GetImageAccordingToDiscovery();
         ownedAmount.text = "" + ingredient.amountOwned;
         outOfStockTaint.gameObject.SetActive(ingredient.amountOwned <= 0);
     }

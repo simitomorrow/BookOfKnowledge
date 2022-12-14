@@ -260,6 +260,17 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab2a808c-6700-4e97-857f-799b586816c3"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -322,15 +333,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""OpenMap"",
-                    ""type"": ""Button"",
-                    ""id"": ""5c3758e0-84e8-4d0b-b88f-712938b14c06"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""OpenAlchemy"",
                     ""type"": ""Button"",
                     ""id"": ""bfbd941d-5cd2-4fb8-87dc-ba206b0268ec"",
@@ -360,17 +362,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""CloseWindow"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4935b997-c377-4e32-bc8f-78de7fafde36"",
-                    ""path"": ""<Keyboard>/m"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KeyboardMouse"",
-                    ""action"": ""OpenMap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -464,17 +455,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6041b4b8-c343-4baa-9e40-6c7a5e1d3a67"",
-                    ""path"": ""<Keyboard>/5"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KeyboardMouse"",
-                    ""action"": ""OpenMap"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""9c5897b3-ecf9-4aac-9246-90b2b15c4ef6"",
                     ""path"": ""<Keyboard>/o"",
                     ""interactions"": """",
@@ -487,7 +467,7 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""13865158-19bf-4eab-8d5c-151287209387"",
-                    ""path"": ""<Keyboard>/6"",
+                    ""path"": ""<Keyboard>/5"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""KeyboardMouse"",
@@ -602,7 +582,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         m_Book_OpenIngredients = m_Book.FindAction("OpenIngredients", throwIfNotFound: true);
         m_Book_OpenElixirs = m_Book.FindAction("OpenElixirs", throwIfNotFound: true);
         m_Book_OpenIncidents = m_Book.FindAction("OpenIncidents", throwIfNotFound: true);
-        m_Book_OpenMap = m_Book.FindAction("OpenMap", throwIfNotFound: true);
         m_Book_OpenAlchemy = m_Book.FindAction("OpenAlchemy", throwIfNotFound: true);
         // UINavigation
         m_UINavigation = asset.FindActionMap("UINavigation", throwIfNotFound: true);
@@ -737,7 +716,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     private readonly InputAction m_Book_OpenIngredients;
     private readonly InputAction m_Book_OpenElixirs;
     private readonly InputAction m_Book_OpenIncidents;
-    private readonly InputAction m_Book_OpenMap;
     private readonly InputAction m_Book_OpenAlchemy;
     public struct BookActions
     {
@@ -749,7 +727,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         public InputAction @OpenIngredients => m_Wrapper.m_Book_OpenIngredients;
         public InputAction @OpenElixirs => m_Wrapper.m_Book_OpenElixirs;
         public InputAction @OpenIncidents => m_Wrapper.m_Book_OpenIncidents;
-        public InputAction @OpenMap => m_Wrapper.m_Book_OpenMap;
         public InputAction @OpenAlchemy => m_Wrapper.m_Book_OpenAlchemy;
         public InputActionMap Get() { return m_Wrapper.m_Book; }
         public void Enable() { Get().Enable(); }
@@ -778,9 +755,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @OpenIncidents.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIncidents;
                 @OpenIncidents.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIncidents;
                 @OpenIncidents.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenIncidents;
-                @OpenMap.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMap;
-                @OpenMap.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMap;
-                @OpenMap.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMap;
                 @OpenAlchemy.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenAlchemy;
                 @OpenAlchemy.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenAlchemy;
                 @OpenAlchemy.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenAlchemy;
@@ -806,9 +780,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @OpenIncidents.started += instance.OnOpenIncidents;
                 @OpenIncidents.performed += instance.OnOpenIncidents;
                 @OpenIncidents.canceled += instance.OnOpenIncidents;
-                @OpenMap.started += instance.OnOpenMap;
-                @OpenMap.performed += instance.OnOpenMap;
-                @OpenMap.canceled += instance.OnOpenMap;
                 @OpenAlchemy.started += instance.OnOpenAlchemy;
                 @OpenAlchemy.performed += instance.OnOpenAlchemy;
                 @OpenAlchemy.canceled += instance.OnOpenAlchemy;
@@ -901,7 +872,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         void OnOpenIngredients(InputAction.CallbackContext context);
         void OnOpenElixirs(InputAction.CallbackContext context);
         void OnOpenIncidents(InputAction.CallbackContext context);
-        void OnOpenMap(InputAction.CallbackContext context);
         void OnOpenAlchemy(InputAction.CallbackContext context);
     }
     public interface IUINavigationActions

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1130bfebed765654db5afc65e9256d14, type: 3}
-  m_Name: IceTea
+  m_Name: _Garbage
   m_EditorClassIdentifier: 
-  elixirName: Eistee
-  description: "Ideal f\xFCr heisse Sommertage.\r"
-  image: {fileID: 21300000, guid: 9ec948463dcd03e43aa06cec83ccf589, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: d4f1589acd0c5fa498e751657a905db6, type: 3}
-  ingredient1: {fileID: 11400000, guid: 0d156ed7c1f7722419bbf6de883cd57d, type: 2}
+  elixirName: "Graue Br\xFChe"
+  description: Hmm... Das scheint nicht funktioniert zu haben.
+  image: {fileID: 21300000, guid: d16355cd426f2b74b8a971ba6c6cac52, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: d16355cd426f2b74b8a971ba6c6cac52, type: 3}
+  ingredient1: {fileID: 0}
   ingredient2: {fileID: 0}
   ingredient3: {fileID: 0}
-  hasBeenDiscovered: 0
+  hasBeenDiscovered: 1
   amountOwned: 0
   effects: []
