@@ -3,7 +3,57 @@ guid: a221e3b9d27fc3a44b9785026892b392
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pages
+    second: {fileID: 2100000, guid: c4589d91fb16833469ae0249681bbaa6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book-cover
+    second: {fileID: 2100000, guid: 5ebf4dd15dbc6464c87f80b791d46c09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book-wood
+    second: {fileID: 2100000, guid: bc94c1f15f31d8f408125a90b228fabd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book1
+    second: {fileID: 2100000, guid: 7b8fd11c9e137e04eac72c16590d9536, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cloth.1
+    second: {fileID: 2100000, guid: 6db2748025e3478458c4f912f2e460c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes
+    second: {fileID: 2100000, guid: 711089d19d489eb429af8955576b604c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower
+    second: {fileID: 2100000, guid: d7f353256b9310f46bd886254064e08d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair
+    second: {fileID: 2100000, guid: 02832d47d2c21034c86acb72253d4c67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hat
+    second: {fileID: 2100000, guid: 0d590fbced876a642b8193a0d0595086, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: aab3d439c998e734e83bbe8bf4403d47, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
