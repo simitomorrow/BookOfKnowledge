@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6143855589331544185}
   - component: {fileID: 7128221354836928476}
   - component: {fileID: 4974349791878730518}
+  - component: {fileID: -2295832980320286292}
   m_Layer: 0
   m_Name: BloodFern
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &-2295832980320286292
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6775820361211048643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 54.19
+  m_Height: 73.79553
+  m_Direction: 1
+  m_Center: {x: -57.505505, y: -45.9, z: -18.2}

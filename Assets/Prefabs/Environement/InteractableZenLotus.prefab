@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fb0e3b18f4e997940b7e081fff09b58a, type: 2}
+  - {fileID: 2100000, guid: f42a9e2f270000845bf1ed307774b9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactables: {fileID: 11400000, guid: fc8e22470d2eb414a80430f7c687a04d, type: 2}
   ingredient: {fileID: 11400000, guid: fcc8ba1079610c340a0d517e2c9aca9c, type: 2}
+  event_UI_updateOwnedAmount: {fileID: 11400000, guid: 9fef95e722f5ec947b477b1483a4fe58, type: 2}
 --- !u!1001 &763372705241940392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +167,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2626411413562693470}
     m_Modifications:
+    - target: {fileID: 214572302682109951, guid: 8d5694bda097ba046b0f3e5b85dc8c98, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3728619278382862696, guid: 8d5694bda097ba046b0f3e5b85dc8c98, type: 3}
       propertyPath: m_Name
       value: ZenLotus
@@ -221,22 +226,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4104300804710550482, guid: 8d5694bda097ba046b0f3e5b85dc8c98, type: 3}
   m_PrefabInstance: {fileID: 763372705241940392}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4118185706743124160 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3728619278382862696, guid: 8d5694bda097ba046b0f3e5b85dc8c98, type: 3}
-  m_PrefabInstance: {fileID: 763372705241940392}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &7337484421225927151
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4118185706743124160}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.29896528
-  m_Height: 0.13
-  m_Direction: 1
-  m_Center: {x: -0.047310308, y: -0.07, z: 0.00002796948}

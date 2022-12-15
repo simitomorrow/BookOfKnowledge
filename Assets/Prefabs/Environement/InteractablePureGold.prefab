@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fb0e3b18f4e997940b7e081fff09b58a, type: 2}
+  - {fileID: 2100000, guid: f42a9e2f270000845bf1ed307774b9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactables: {fileID: 11400000, guid: fc8e22470d2eb414a80430f7c687a04d, type: 2}
   ingredient: {fileID: 11400000, guid: 747827af63a23084798be31014527d28, type: 2}
+  event_UI_updateOwnedAmount: {fileID: 11400000, guid: 9fef95e722f5ec947b477b1483a4fe58, type: 2}
 --- !u!1001 &7907464620118711749
 PrefabInstance:
   m_ObjectHideFlags: 0
