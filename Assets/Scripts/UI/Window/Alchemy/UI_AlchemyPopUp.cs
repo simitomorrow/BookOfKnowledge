@@ -8,11 +8,15 @@ public class UI_AlchemyPopUp : MonoBehaviour
     public CanvasGroup cauldron;
     public CanvasGroup thisPopUp;
     public Image mainImage;
+    public Image popUpBright;
+    public Image popUpDark;
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
     public TextMeshProUGUI effect1;
     public TextMeshProUGUI effect2;
     public TextMeshProUGUI effect3;
+
+    public ElixirData garbage;
 
     private ElixirData currentElixir;
 
@@ -30,7 +34,16 @@ public class UI_AlchemyPopUp : MonoBehaviour
         cauldron.blocksRaycasts = false;
         cauldron.interactable = false;
 
-
+        if (elixir == garbage)
+        {
+            popUpBright.gameObject.SetActive(false);
+            popUpDark.gameObject.SetActive(true);
+        }
+        else
+        {
+            popUpBright.gameObject.SetActive(true);
+            popUpDark.gameObject.SetActive(false);
+        }
         title.text = elixir.elixirName;
         mainImage.sprite = elixir.GetImageAccordingToDiscovery();
         description.text = elixir.description;

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirName: "Graue Br\xFChe"
   description: Hmm... Das scheint nicht funktioniert zu haben.
-  image: {fileID: 21300000, guid: d16355cd426f2b74b8a971ba6c6cac52, type: 3}
-  undiscoveredImage: {fileID: 21300000, guid: d16355cd426f2b74b8a971ba6c6cac52, type: 3}
+  image: {fileID: 21300000, guid: 903fd12243a7c044981030c0c0c37797, type: 3}
+  undiscoveredImage: {fileID: 21300000, guid: 903fd12243a7c044981030c0c0c37797, type: 3}
   ingredient1: {fileID: 0}
   ingredient2: {fileID: 0}
   ingredient3: {fileID: 0}
   hasBeenDiscovered: 1
-  amountOwned: 0
+  amountOwned: 3
   effects: []
