@@ -266,15 +266,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ToggleBookOpen",
-                    "type": "Button",
-                    "id": "5cf353dc-c6fb-414f-8e34-39edf14a98df",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "OpenMainMenu",
                     "type": "Button",
                     "id": "726641a1-1809-43f8-bfd8-29acebb91fd0",
@@ -450,17 +441,6 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "OpenAlchemy",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e5bec476-779e-4bf6-96e0-a413066de927",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ToggleBookOpen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

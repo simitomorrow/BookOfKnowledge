@@ -288,15 +288,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ToggleBookOpen"",
-                    ""type"": ""Button"",
-                    ""id"": ""5cf353dc-c6fb-414f-8e34-39edf14a98df"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""OpenMainMenu"",
                     ""type"": ""Button"",
                     ""id"": ""726641a1-1809-43f8-bfd8-29acebb91fd0"",
@@ -474,17 +465,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""action"": ""OpenAlchemy"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e5bec476-779e-4bf6-96e0-a413066de927"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ToggleBookOpen"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -577,7 +557,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         // Book
         m_Book = asset.FindActionMap("Book", throwIfNotFound: true);
         m_Book_CloseWindow = m_Book.FindAction("CloseWindow", throwIfNotFound: true);
-        m_Book_ToggleBookOpen = m_Book.FindAction("ToggleBookOpen", throwIfNotFound: true);
         m_Book_OpenMainMenu = m_Book.FindAction("OpenMainMenu", throwIfNotFound: true);
         m_Book_OpenIngredients = m_Book.FindAction("OpenIngredients", throwIfNotFound: true);
         m_Book_OpenElixirs = m_Book.FindAction("OpenElixirs", throwIfNotFound: true);
@@ -711,7 +690,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Book;
     private IBookActions m_BookActionsCallbackInterface;
     private readonly InputAction m_Book_CloseWindow;
-    private readonly InputAction m_Book_ToggleBookOpen;
     private readonly InputAction m_Book_OpenMainMenu;
     private readonly InputAction m_Book_OpenIngredients;
     private readonly InputAction m_Book_OpenElixirs;
@@ -722,7 +700,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         private @Inputs m_Wrapper;
         public BookActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @CloseWindow => m_Wrapper.m_Book_CloseWindow;
-        public InputAction @ToggleBookOpen => m_Wrapper.m_Book_ToggleBookOpen;
         public InputAction @OpenMainMenu => m_Wrapper.m_Book_OpenMainMenu;
         public InputAction @OpenIngredients => m_Wrapper.m_Book_OpenIngredients;
         public InputAction @OpenElixirs => m_Wrapper.m_Book_OpenElixirs;
@@ -740,9 +717,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @CloseWindow.started -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
                 @CloseWindow.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
                 @CloseWindow.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnCloseWindow;
-                @ToggleBookOpen.started -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
-                @ToggleBookOpen.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
-                @ToggleBookOpen.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnToggleBookOpen;
                 @OpenMainMenu.started -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
                 @OpenMainMenu.performed -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
                 @OpenMainMenu.canceled -= m_Wrapper.m_BookActionsCallbackInterface.OnOpenMainMenu;
@@ -765,9 +739,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @CloseWindow.started += instance.OnCloseWindow;
                 @CloseWindow.performed += instance.OnCloseWindow;
                 @CloseWindow.canceled += instance.OnCloseWindow;
-                @ToggleBookOpen.started += instance.OnToggleBookOpen;
-                @ToggleBookOpen.performed += instance.OnToggleBookOpen;
-                @ToggleBookOpen.canceled += instance.OnToggleBookOpen;
                 @OpenMainMenu.started += instance.OnOpenMainMenu;
                 @OpenMainMenu.performed += instance.OnOpenMainMenu;
                 @OpenMainMenu.canceled += instance.OnOpenMainMenu;
@@ -867,7 +838,6 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     public interface IBookActions
     {
         void OnCloseWindow(InputAction.CallbackContext context);
-        void OnToggleBookOpen(InputAction.CallbackContext context);
         void OnOpenMainMenu(InputAction.CallbackContext context);
         void OnOpenIngredients(InputAction.CallbackContext context);
         void OnOpenElixirs(InputAction.CallbackContext context);

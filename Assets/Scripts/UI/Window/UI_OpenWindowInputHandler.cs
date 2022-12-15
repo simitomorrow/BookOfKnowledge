@@ -18,7 +18,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
     [SerializeField] private BoolVariable canPlayerMove;
 
     private Inputs inputs;
-    private InputAction openBook;
     private InputAction openMainMenu;
     private InputAction openIngredients;
     private InputAction openElixirs;
@@ -45,10 +44,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        openBook = inputs.Book.ToggleBookOpen;
-        openBook.Enable();
-        openBook.performed += ToggleBookOpen;
-
         openMainMenu = inputs.Book.OpenMainMenu;
         openMainMenu.Enable();
         openMainMenu.performed += OpenMainMenu;
@@ -80,7 +75,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
 
     private void OnDisable()
     {
-        openBook.Disable();
         openMainMenu.Disable();
         openIngredients.Disable();
         openElixirs.Disable();
@@ -94,19 +88,6 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
         isBookOpen.value = true;
         activePage.keyword = keyword;
         SendWindowVisibilityEvent();
-    }
-
-    private void ToggleBookOpen(InputAction.CallbackContext context)
-    {
-        if (!isBookOpen.value)
-        {
-            OpenBookPage(activePage.keyword);
-        } else
-        {
-            isBookOpen.value = false;
-            windowVisibilityEvent.Raise();
-            EnablePlayerMovement();
-        }
     }
 
     private void OpenMainMenu(InputAction.CallbackContext context)
@@ -137,6 +118,11 @@ public class UI_OpenWindowInputHandler : MonoBehaviour
     }
 
     private void CloseWindow(InputAction.CallbackContext context)
+    {
+        CloseWindow();
+    }
+
+    public void CloseWindow()
     {
         if (isBookOpen.value)
         {

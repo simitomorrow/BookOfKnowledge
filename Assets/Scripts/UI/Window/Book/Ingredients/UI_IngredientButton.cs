@@ -18,8 +18,8 @@ public class UI_IngredientButton : MonoBehaviour
         this.ingredient = ingredient;
         thumbnail.sprite = ingredient.GetImageAccordingToDiscovery();
         ownedAmount.text = "" + ingredient.amountOwned;
-        title.text = ingredient.ingredientName;
         outOfStockTaint.gameObject.SetActive(ingredient.amountOwned <= 0);
+        title.text = ingredient.ingredientName;
         ID = id;
     }
 
@@ -31,6 +31,7 @@ public class UI_IngredientButton : MonoBehaviour
 
     public void UpdateOwnedAmountNumber()
     {
+        thumbnail.sprite = ingredient.GetImageAccordingToDiscovery();
         ownedAmount.text = "" + ingredient.amountOwned;
         outOfStockTaint.gameObject.SetActive(ingredient.amountOwned <= 0);
     }

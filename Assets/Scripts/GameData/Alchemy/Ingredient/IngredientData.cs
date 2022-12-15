@@ -24,6 +24,8 @@ public class IngredientData : ScriptableObject
     private EffectData effect3;
     public bool effect3Discovered;
 
+    public EffectData undiscovered;
+
     public int amountOwned;
 
     [SerializeField]
@@ -75,7 +77,7 @@ public class IngredientData : ScriptableObject
             return effect1;
         } else
         {
-           return EffectData.GetUndiscoveredEffect();
+           return undiscovered;
         }
     }
 
@@ -87,7 +89,7 @@ public class IngredientData : ScriptableObject
         }
         else
         {
-            return EffectData.GetUndiscoveredEffect();
+            return undiscovered;
         }
     }
 
@@ -99,7 +101,7 @@ public class IngredientData : ScriptableObject
         }
         else
         {
-            return EffectData.GetUndiscoveredEffect();
+            return undiscovered;
         }
     }
 }

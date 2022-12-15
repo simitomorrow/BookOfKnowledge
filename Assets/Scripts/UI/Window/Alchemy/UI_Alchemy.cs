@@ -21,11 +21,14 @@ public class UI_Alchemy: MonoBehaviour
     [SerializeField] private Button elixirResultPrefab;
     [SerializeField] private GameObject elixirResultParent;
 
+    [SerializeField] private UI_AlchemyPopUp popUp;
+
     [SerializeField] private GameEvent updateAmountOwnedUI;
 
     private void Start()
     {
         InitializeInventoryUI();
+        popUp.Close();
     }
 
     private void InitializeInventoryUI()
@@ -118,6 +121,8 @@ public class UI_Alchemy: MonoBehaviour
         }
         UpdateElixirSlotUI(elixirBrewed);
         UpdateAmountOwnedUI();
+        UpdateAlchemyUI();
+        popUp.Show(elixirBrewed);
     }
 
     private ElixirData GetElixierFromIngredients(List<IngredientData> ingredients)

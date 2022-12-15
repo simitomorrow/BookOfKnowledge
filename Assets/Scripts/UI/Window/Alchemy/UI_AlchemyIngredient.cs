@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UI_AlchemyIngredient : MonoBehaviour
 {
+    public Button button;
     public Image thumbnail;
     public Image selectedBoarder;
     public Image outOfStockTaint;
@@ -16,11 +17,12 @@ public class UI_AlchemyIngredient : MonoBehaviour
     public void Initialize(IngredientData iData)
     {
         ingredient = iData;
-        thumbnail.sprite = iData.GetImageAccordingToDiscovery();
+        thumbnail.sprite = ingredient.GetImageAccordingToDiscovery();
         selectedBoarder.gameObject.SetActive(false);
-        outOfStockTaint.gameObject.SetActive(iData.amountOwned <= 0);
-        title.text = iData.ingredientName;
-        ownedAmount.text = "" + iData.amountOwned;
+        outOfStockTaint.gameObject.SetActive(ingredient.amountOwned <= 0);
+        button.enabled = ingredient.amountOwned > 0;
+        title.text = ingredient.ingredientName;
+        ownedAmount.text = "" + ingredient.amountOwned;
         isSelected = false;
     }
 
@@ -29,6 +31,7 @@ public class UI_AlchemyIngredient : MonoBehaviour
         thumbnail.sprite = ingredient.GetImageAccordingToDiscovery();
         ownedAmount.text = "" + ingredient.amountOwned;
         outOfStockTaint.gameObject.SetActive(ingredient.amountOwned <= 0);
+        button.enabled = ingredient.amountOwned > 0;
     }
 
     public void ToggleSelection()

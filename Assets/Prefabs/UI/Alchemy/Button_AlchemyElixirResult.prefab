@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 3183341190454222761}
   - component: {fileID: 2024759684658123738}
   - component: {fileID: 5623595096498490673}
+  - component: {fileID: 197631953096559362}
   m_Layer: 0
   m_Name: Button_AlchemyElixirResult
   m_TagString: Untagged
@@ -202,9 +203,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5623595096498490673}
-        m_TargetAssemblyTypeName: UI_AlchemyElixir, Assembly-CSharp
-        m_MethodName: RemoveYourself
+      - m_Target: {fileID: 11400000, guid: 1b6b400f56bf9b64794a60168021bf05, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -257,6 +258,34 @@ MonoBehaviour:
   thumbnail: {fileID: 3183341189378634735}
   outOfStockTaint: {fileID: 7865304703532492440}
   ownedAmount: {fileID: 9165075410387012041}
+--- !u!114 &197631953096559362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3183341190454222767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a62cba36360684280bb37d10461ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: {fileID: 11400000, guid: 56be9e4f20dad74479018b7a9867f813, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5623595096498490673}
+        m_TargetAssemblyTypeName: UI_AlchemyElixir, Assembly-CSharp
+        m_MethodName: RemoveYourself
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8806044077447041053
 GameObject:
   m_ObjectHideFlags: 0

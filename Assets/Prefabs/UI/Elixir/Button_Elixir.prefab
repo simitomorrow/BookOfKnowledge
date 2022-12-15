@@ -560,7 +560,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8022381481362983653}
         m_TargetAssemblyTypeName: UI_ElixirButton, Assembly-CSharp
-        m_MethodName: SelectElixirInUI
+        m_MethodName: UpdateOwnedAmountNumber
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
