@@ -592,6 +592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6902960936078260772}
+  - component: {fileID: 3144368745038583935}
   m_Layer: 0
   m_Name: PureGold
   m_TagString: Untagged
@@ -622,6 +623,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3144368745038583935
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091099569304101022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13
+  m_Height: 0.53
+  m_Direction: 1
+  m_Center: {x: -0.02, y: 0.21, z: 0.02}
 --- !u!1 &8405972219507957181
 GameObject:
   m_ObjectHideFlags: 0

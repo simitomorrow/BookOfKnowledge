@@ -24,6 +24,6 @@ MonoBehaviour:
   effect2: {fileID: 11400000, guid: 13ef06d0c9f42904aa605f7dd3a9e580, type: 2}
   effect2Discovered: 0
   effect3: {fileID: 11400000, guid: bc13e74e9859fe841a15381285f79ced, type: 2}
-  effect3Discovered: 1
+  effect3Discovered: 0
   undiscovered: {fileID: 11400000, guid: 006d372fce0c08941983a8ff4a9d0831, type: 2}
   amountOwned: 0

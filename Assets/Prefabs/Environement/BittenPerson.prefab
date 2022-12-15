@@ -169,7 +169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 736fc061c6b803d4594607ee98cf17fe, type: 3}
+  m_Texture: {fileID: 2800000, guid: ec65dc9c9d429d44d90565534c061d61, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 4788949300056220648}
   - component: {fileID: 7213844097017731982}
   - component: {fileID: 4572235716998350733}
+  - component: {fileID: 9217352984201643666}
   m_Layer: 0
   m_Name: InteractRange
   m_TagString: Untagged
@@ -395,7 +396,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fb0e3b18f4e997940b7e081fff09b58a, type: 2}
+  - {fileID: 2100000, guid: f42a9e2f270000845bf1ed307774b9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -417,3 +418,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9217352984201643666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7592801576215045743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94704cf6773d3164f8edbf60e4eadb26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractionRangeVisible: {fileID: 11400000, guid: c803f7f4ed3de444582b660962ea3faa, type: 2}
