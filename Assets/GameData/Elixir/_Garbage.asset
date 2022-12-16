@@ -20,5 +20,5 @@ MonoBehaviour:
   ingredient2: {fileID: 0}
   ingredient3: {fileID: 0}
   hasBeenDiscovered: 1
-  amountOwned: 3
+  amountOwned: 0
   effects: []

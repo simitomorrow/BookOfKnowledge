@@ -8,23 +8,24 @@ public class NPC : MonoBehaviour, Interactable
     public PageKeyword incidentUIPage;
     public ActivePage currentUIPage;
     public IntVariable selectedQuestIDInUI;
+    public BoolVariable isBookOpen;
     public GameEvent openIncidentsEvent;
 
     public void Interact()
     {
-        if (quest.questTriggered == false && quest.questFinished == false)
-        {
-            quest.questTriggered = true;
-            selectedQuestIDInUI.value = GetQuestID();
-            currentUIPage.keyword = incidentUIPage;
-            openIncidentsEvent.Raise();
-        }
         if (quest.questTriggered == true && quest.questFinished == false)
         {
             Debug.Log("Required hand in quest item check :I");
         }
+        if (quest.questFinished == false)
+        {
+            quest.questTriggered = true;
+            selectedQuestIDInUI.value = GetQuestID();
+            isBookOpen.value = true;
+            currentUIPage.keyword = incidentUIPage;
+            openIncidentsEvent.Raise();
+        }
     }
-
 
     private int GetQuestID()
     {
